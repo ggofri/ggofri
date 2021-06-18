@@ -1,12 +1,11 @@
 # Hi! I'm Julian 👋
 A Fullstack Developer, passionate about Front-end development and learning new technologies.
-Currently, my technical skills are on __Typescript__, __Javascript__, __HTML__, __CSS__, __React.js__, __Redux__, __GraphQL__, __Node.js__, __Express.js__, __SQL__, __PostgreSQL__, __Sequelize__, __Bootstrap__, __Tailwind__, __Less__, __Sass__, __GIT__ and __Figma__ and I'm interested in learn more about __UX__ and __UI__ design.
+Currently, my technical skills are on __Typescript__, __Javascript__, __HTML__, __CSS__, __React.js__, __Redux__, __GraphQL__, __Node.js__, __Express.js__, __SQL__, __PostgreSQL__, __Sequelize__, __Bootstrap__, __Tailwind__, __Less__, __Sass__, __GIT__, __Hybris CMS__ and __Figma__ and I'm interested in learn more about __UX__ and __UI__ design.
 
 --------
  
 ### 🔭 I'm currently working on:
-Currently, I'm working on a ecommerce that uses __Typescript__, __React.js__, __Express.js__, __GraphQL__ and __Sequelize__.
-By te moment, the repo is private so you'll see it when it finished (I'll advise it in [___LinkedIn___](https://www.linkedin.com/in/julignacio/), connect me 😄)
+Currently, I'm working as a web developer in Lenovo and in a close future more projects will appear
 
 --------
 
