@@ -12,3 +12,13 @@ my philosophy is treat every problem as a **puzzle**. this allowed me to easily 
 
 follow my thoughts at [x](https://x.com/ggofri).  
 connect with me at [linkedin](https://linkedin.com/in/ggofri).
+
+### i also have a blog! see my latest posts
+<!--START_SECTION:blog_posts-->
+
+<!--END_SECTION:blog_posts-->
+
+## :zap: recent activity
+<!--START_SECTION:activity-->
+
+<!--END_SECTION:activity-->
