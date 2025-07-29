@@ -1,0 +1,32 @@
+---
+import { getCollection } from "astro:content";
+
+const currentWork = await getCollection("current");
+---
+
+<section class="mb-8">
+	<h2>⚡ Currently Building</h2>
+	<ul class="list-disc pl-6">
+		{
+			currentWork.map((work) => (
+				<li class="mb-2">
+					<strong>
+						{work.data.project && `${work.data.project} `}
+						{work.data.title}
+					</strong>
+					{work.data.description && (
+						<em>
+							{work.data.link ? (
+								<a href={work.data.link}>
+									→ {work.data.description}
+								</a>
+							) : (
+								work.data.description
+							)}
+						</em>
+					)}
+				</li>
+			))
+		}
+	</ul>
+</section>

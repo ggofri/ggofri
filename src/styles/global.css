@@ -2,17 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
-
-:root {
+/* light mode root */
+/* :root {
     --width: 720px;
-    --font-main: Verdana, sans-serif;
-    --font-secondary: Verdana, sans-serif;
-    --font-scael: 1em;
+    --font-main: system-ui, sans-serif;
+    --font-secondary: system-ui, sans-serif;
+    --font-scale: 1em;
     --background-color: #fff;
     --heading-color: #222;
     --text-color: #444;
@@ -21,7 +16,21 @@
     --code-background-color: #f2f2f2;
     --code-color: #222;
     --blockquote-color: #222;
-}
+} */
+     :root {
+        --width: 720px;
+        --font-main: system-ui, sans-serif;
+        --font-secondary: system-ui, sans-serif;
+        --font-scale: 1em;
+		--background-color: black;
+        --heading-color: #ddd;
+        --text-color: #ccc;
+        --link-color: #8cc2dd;
+        --visited-color:  #8b6fcb;
+        --code-background-color: #000;
+        --code-color: #ddd;
+        --blockquote-color: #ccc;
+    }
 
 @media (prefers-color-scheme: dark) {
     :root {

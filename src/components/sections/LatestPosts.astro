@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+
+const allPosts = await getCollection('blog');
+const posts = allPosts.sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+).slice(0, 3);
+---
+
+	{posts.length > 0 && (
+		<div class="grid grid-cols-3 gap-6 mb-6 md:gap-4 max-md:grid-cols-1 max-md:gap-4">
+			{posts.map((post) => (
+				<article class="border border-gray-700 rounded-lg p-0 transition-all duration-200 bg-gray-800 text-white flex flex-col min-h-[280px] overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(0,0,0,0.3)] hover:border-gray-500">
+					<a href={`/blog/${post.id}/`} class="no-underline text-inherit flex flex-col h-full">
+						{post.data.heroImage && (
+							<div class="w-full h-[150px] overflow-hidden bg-gray-700">
+								<Image width={300} height={150} src={post.data.heroImage} alt="" class="w-full h-full object-cover transition-transform duration-200 hover:scale-105" />
+							</div>
+						)}
+						<div class="p-5 flex flex-col flex-grow">
+							<h3 class="m-0 mb-3 text-[1.1rem] leading-tight text-white font-semibold">{post.data.title}</h3>
+							{post.data.description && (
+								<p class="m-0 mb-auto text-gray-300 leading-relaxed flex-grow text-sm">{post.data.description}</p>
+							)}
+							<time class="text-xs text-gray-400 italic mt-4">{post.data.pubDate.toLocaleDateString()}</time>
+						</div>
+					</a>
+				</article>
+			))}
+		</div>
+	)}
+	
+	<p>
+		<strong><a href="/blog" class="text-accent hover:text-accent-light transition-colors">
+			{allPosts.length} post{allPosts.length !== 1 ? 's' : ''} published →
+		</a></strong>
+	</p>
+</>
+

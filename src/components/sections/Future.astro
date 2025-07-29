@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+
+const futureItems = await getCollection('future').then(futureItems => 
+    futureItems.sort((a, b) => {
+        if (a.data.year > b.data.year) return 1
+        if (a.data.year < b.data.year) return -1
+        if (a.data.quarter > b.data.quarter) return 1
+        return -1;
+    })
+);
+---
+    <ul class="flex">
+        {futureItems.map(quarter => (
+            <li class="flex-1">
+                <h3>Q{quarter.data.quarter} {quarter.data.year}</h3>
+                <ul>
+                    {quarter.data.items.map(item => (
+                        <li>
+                            {item.title}
+                        </li>
+                    ))}
+                </ul>
+            </li>
+        ))}
+    </ul>

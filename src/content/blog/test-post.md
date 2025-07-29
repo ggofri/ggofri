@@ -1,0 +1,16 @@
+---
+title: 'Test post'
+description: 'Lorem ipsum dolor sit amet'
+pubDate: 'Jul 08 2022'
+heroImage: '../../assets/blog-placeholder-3.jpg'
+---
+
+This is a test text.
+
+```
+    this is code
+```
+
+this isn't
+
+`this is code again`
