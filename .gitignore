@@ -23,5 +23,5 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
-# TODO file
-TODO.md
+# TODO files
+*.temp.md
