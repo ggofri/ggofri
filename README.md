@@ -15,8 +15,8 @@ connect with me at [linkedin](https://linkedin.com/in/ggofri).
 
 ### i also have a blog! see my latest posts
 <!--START_SECTION:blog_posts-->
-- [Shiny object syndrome](https://ggofri.github.io/blog/shiny-object) - Jul 29 2022
-- [It was always done this way](https://ggofri.github.io/blog/always-done-this-way) - Jul 29 2022
+- [Shiny object syndrome](https://ggofri.vercel.app/blog/shiny-object) - Jul 29 2022
+- [It was always done this way](https://ggofri.vercel.app/blog/always-done-this-way) - Jul 29 2022
 <!--END_SECTION:blog_posts-->
 
 ## :zap: recent activity
