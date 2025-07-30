@@ -1,6 +1,6 @@
 ---
 title: "fake-end"
-description: "minimalist typescript cli tool for mocking backend apis."
+description: "Minimalist typescript cli tool for mocking backend apis."
 status: "released"
 logo: "🎭"
 links:

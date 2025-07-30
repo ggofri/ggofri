@@ -11,7 +11,7 @@ const posts = allPosts.sort(
 	{posts.length > 0 && (
 		<div class="grid grid-cols-3 gap-6 mb-6 md:gap-4 max-md:grid-cols-1 max-md:gap-4">
 			{posts.map((post) => (
-				<article class="border border-gray-700 rounded-lg p-0 transition-all duration-200 bg-gray-800 text-white flex flex-col min-h-[280px] overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(0,0,0,0.3)] hover:border-gray-500">
+				<article class="border border-gray-700 rounded-lg p-0 transition-all duration-200 bg-[#212121] text-white flex flex-col min-h-[280px] overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(0,0,0,0.3)] hover:border-gray-500">
 					<a href={`/blog/${post.id}/`} class="no-underline text-inherit flex flex-col h-full">
 						{post.data.heroImage && (
 							<div class="w-full h-[150px] overflow-hidden bg-gray-700">

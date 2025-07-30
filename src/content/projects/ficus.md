@@ -1,6 +1,6 @@
 ---
-title: "ficus"
-description: "api migration orchestrator for high-scale applications."
+title: "Ficus"
+description: "API migration orchestrator for high-scale applications."
 status: "wip"
 logo: "🌿"
 releaseInfo: "open source planned for q4 2025"
