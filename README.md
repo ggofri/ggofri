@@ -14,8 +14,8 @@ Platform for **reliable** key backend migrations
 
 ### Connect
 
-Follow my thoughts at [x](https://x.com/ggofri).  
-Connect with me at [linkedin](https://linkedin.com/in/ggofri).
+Follow my thoughts at [X](https://x.com/ggofri).  
+Connect with me at [LinkedIn](https://linkedin.com/in/ggofri).
 
 ## I also have a blog! See my latest posts
 <!--START_SECTION:blog_posts-->
