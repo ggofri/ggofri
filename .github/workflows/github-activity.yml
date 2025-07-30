@@ -29,8 +29,8 @@ jobs:
           echo "$activity_data" | jq -r '
             .[] | 
             select(.type == "PushEvent" or .type == "IssuesEvent" or .type == "PullRequestEvent" or .type == "IssueCommentEvent" or .type == "CreateEvent") |
-            "\(.created_at)|\(.type)|\(.repo.name)|\(.payload)"
-          ' | head -5 | while IFS='|' read -r date type repo payload; do
+            "\(.created_at)|\(.type)|\(.repo.name)|\(.payload.issue.number // .payload.pull_request.number // "")"
+          ' | head -5 | while IFS='|' read -r date type repo issue_number; do
             # Format date
             formatted_date=$(date -d "$date" "+%b %d" 2>/dev/null || echo "Recent")
             
@@ -40,13 +40,25 @@ jobs:
                 echo "- 🚀 Pushed commits to [$repo](https://github.com/$repo) - $formatted_date" >> "$activity_content"
                 ;;
               "PullRequestEvent") 
-                echo "- 🔄 Opened/updated PR in [$repo](https://github.com/$repo) - $formatted_date" >> "$activity_content"
+                if [ -n "$issue_number" ]; then
+                  echo "- 🔄 Opened/updated PR [#$issue_number](https://github.com/$repo/pull/$issue_number) in [$repo](https://github.com/$repo) - $formatted_date" >> "$activity_content"
+                else
+                  echo "- 🔄 Opened/updated PR in [$repo](https://github.com/$repo) - $formatted_date" >> "$activity_content"
+                fi
                 ;;
               "IssuesEvent")
-                echo "- 🐛 Created/updated issue in [$repo](https://github.com/$repo) - $formatted_date" >> "$activity_content"
+                if [ -n "$issue_number" ]; then
+                  echo "- 🐛 Created/updated issue [#$issue_number](https://github.com/$repo/issues/$issue_number) in [$repo](https://github.com/$repo) - $formatted_date" >> "$activity_content"
+                else
+                  echo "- 🐛 Created/updated issue in [$repo](https://github.com/$repo) - $formatted_date" >> "$activity_content"
+                fi
                 ;;
               "IssueCommentEvent")
-                echo "- 💬 Commented on issue in [$repo](https://github.com/$repo) - $formatted_date" >> "$activity_content"
+                if [ -n "$issue_number" ]; then
+                  echo "- 💬 Commented on issue [#$issue_number](https://github.com/$repo/issues/$issue_number) in [$repo](https://github.com/$repo) - $formatted_date" >> "$activity_content"
+                else
+                  echo "- 💬 Commented on issue in [$repo](https://github.com/$repo) - $formatted_date" >> "$activity_content"
+                fi
                 ;;
               "CreateEvent")
                 echo "- ✨ Created repository or branch [$repo](https://github.com/$repo) - $formatted_date" >> "$activity_content"
