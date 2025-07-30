@@ -21,5 +21,9 @@ connect with me at [linkedin](https://linkedin.com/in/ggofri).
 
 ## :zap: recent activity
 <!--START_SECTION:activity-->
-
+- 💬 Commented on issue in [vercel/next.js](https://github.com/vercel/next.js) - Jul 27
+- 💬 Commented on issue in [vercel/vercel](https://github.com/vercel/vercel) - Jul 27
+- 💬 Commented on issue in [rupali-codes/LinksHub](https://github.com/rupali-codes/LinksHub) - Jul 27
+- 🔄 Opened/updated PR in [rupali-codes/LinksHub](https://github.com/rupali-codes/LinksHub) - Jul 27
+- 🚀 Pushed commits to [ggofri/LinksHub](https://github.com/ggofri/LinksHub) - Jul 27
 <!--END_SECTION:activity-->
