@@ -8,7 +8,11 @@ my philosophy is treat every problem as a **puzzle**. this allowed me to easily 
 
 **⚙️ focused on:** platform software & developer experience
 
-**🧱 currently building:** _ficus_ → platform for **reliable** key backend migrations
+### 🧱 currently building: Ficus
+
+Platform for **reliable** key backend migrations
+
+### Connect
 
 follow my thoughts at [x](https://x.com/ggofri).  
 connect with me at [linkedin](https://linkedin.com/in/ggofri).
