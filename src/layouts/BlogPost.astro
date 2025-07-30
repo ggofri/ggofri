@@ -5,6 +5,7 @@ import Nav from "../components/layout/Nav.astro";
 import Footer from "../components/layout/Footer.astro";
 import FormattedDate from "../components/ui/FormattedDate.astro";
 import { Image } from "astro:assets";
+import PlaceholderImage from "../assets/blog/placeholder.jpg";
 
 type Props = CollectionEntry<"blog">["data"];
 
@@ -19,7 +20,7 @@ const parsedUpdatedDate = updatedDate
 
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description} image={heroImage || PlaceholderImage} />
 	</head>
 
 	<body>
@@ -27,17 +28,13 @@ const parsedUpdatedDate = updatedDate
 		<main class="w-full max-w-none m-0">
 			<article>
 				<div class="w-full">
-					{
-						heroImage && (
-							<Image
-								width={1020}
-								height={510}
-								src={heroImage}
-								alt=""
-								class="object-contain block mx-auto rounded-xl shadow-custom"
-							/>
-						)
-					}
+					<Image
+						width={1020}
+						height={510}
+						src={heroImage || PlaceholderImage}
+						alt=""
+						class="object-cover block mx-auto rounded-xl shadow-custom"
+					/>
 				</div>
 				<div
 					class="prose w-content max-w-[calc(100%-2rem)] mx-auto p-4"

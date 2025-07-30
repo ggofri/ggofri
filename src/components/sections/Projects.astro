@@ -1,9 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
-import HeroImage1 from '../../assets/blog-placeholder-1.jpg';
-import HeroImage2 from '../../assets/blog-placeholder-2.jpg';
-import HeroImage3 from '../../assets/blog-placeholder-3.jpg';
 
 const projects = await getCollection('projects');
 
@@ -16,7 +13,6 @@ const sortedProjects = projects.sort((a, b) => {
 	return dateB.getTime() - dateA.getTime();
 });
 
-const defaultImages = [HeroImage1, HeroImage2, HeroImage3];
 ---
 
 <ul>
