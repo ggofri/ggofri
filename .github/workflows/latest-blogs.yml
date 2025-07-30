@@ -1,17 +1,17 @@
-name: Build and Update README
+name: Update Latest Blog Posts
 
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: '0 6 * * *' # Daily at 6 AM UTC
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  update-blog-posts:
     runs-on: ubuntu-latest
     
     steps:
@@ -19,18 +19,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build project
-        run: npm run build
 
       - name: Update blog posts section
         run: |
@@ -73,11 +61,6 @@ jobs:
           ' README.md > README.tmp && mv README.tmp README.md
           
           rm -f "$temp_file" "$blog_content"
-
-      - name: Update GitHub activity
-        uses: jamesgeorge007/github-activity-readme@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Check for changes
         id: verify-changed-files
