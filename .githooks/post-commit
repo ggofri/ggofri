@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if git diff --name-only HEAD~1 HEAD | grep -q "src/content/resume/main.md"; then
+    echo "🔄 Resume file changed, generating PDF..."
+    npm run download-resume
+fi
