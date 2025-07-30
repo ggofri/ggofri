@@ -19,6 +19,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.head_ref || github.ref }}
 
       - name: Update blog posts section
         run: |
@@ -81,4 +82,4 @@ jobs:
           
           - Updated with 5 most recent blog posts
           - Sorted by publication date (newest first)"
-          git push
+          git push origin HEAD:${{ github.head_ref || github.ref_name }}
