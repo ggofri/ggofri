@@ -1,0 +1,49 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/layout/BaseHead.astro';
+import Footer from '../../components/layout/Footer.astro';
+import FormattedDate from '../../components/ui/FormattedDate.astro';
+import Header from '../../components/layout/Nav.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const basePostClasses = '[&>img]:mb-2 rounded-lg'
+const nonFirstChildClasses = 'w-full text-center md:text-start md:w-[calc(50%-1rem)]'
+const firstChildClasses = 'w-full text-center [&>img]:w-100 [&>h4]:text-xl md:[&>h4]:text-2xl';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section>
+				<ul class="list-none flex flex-wrap gap-8">
+					{
+						posts.map((post, i) => (
+							<li class={`${basePostClasses} ${i === 0 ? firstChildClasses : nonFirstChildClasses}`}>
+								<a href={`/blog/${post.id}/`}>
+									{post.data.heroImage && (
+										<Image width={720} height={360} src={post.data.heroImage} alt="" class="object-cover"} />
+									)}
+									<h4 class="title">{post.data.title}</h4>
+									<p class="date">
+										<FormattedDate date={post.data.pubDate} />
+									</p>
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
