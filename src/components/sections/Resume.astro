@@ -1,0 +1,29 @@
+---
+import { render } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+const resume = await getEntry('resume', 'main');
+const { Content } = resume ? await render(resume) : { Content: null };
+---
+
+<div class="resume-header">
+	<h1>{resume?.data.name}</h1>
+	<p><strong class="text-xl">{resume?.data.title}</strong></p>
+	<div>
+		<span>📍 {resume?.data.location}</span>
+		{resume?.data.linkedin && (
+			<a href={resume.data.linkedin} class="block" target="_blank" rel="noopener noreferrer">
+				💼 {resume.data.linkedin}
+			</a>
+		)}
+		{resume?.data.github && (
+			<a href={resume.data.github} class="block" target="_blank" rel="noopener noreferrer">
+				🔗 {resume.data.github}
+			</a>
+		)}
+	</div>
+</div>
+
+<div class="resume-content">
+	{Content && <Content />}
+</div>

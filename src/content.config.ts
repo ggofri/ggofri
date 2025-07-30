@@ -52,4 +52,15 @@ const future = defineCollection({
 	}),
 });
 
-export const collections = { blog, projects, draft, future };
+const resume = defineCollection({
+	loader: glob({ base: './src/content/resume', pattern: '**/*.{md,mdx}' }),
+	schema: z.object({
+		name: z.string(),
+		title: z.string(),
+		location: z.string(),
+		linkedin: z.string().url().optional(),
+		github: z.string().url().optional(),
+	}),
+});
+
+export const collections = { blog, projects, draft, future, resume };
