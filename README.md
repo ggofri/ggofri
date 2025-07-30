@@ -13,7 +13,7 @@ my philosophy is treat every problem as a **puzzle**. this allowed me to easily 
 follow my thoughts at [x](https://x.com/ggofri).  
 connect with me at [linkedin](https://linkedin.com/in/ggofri).
 
-### i also have a blog! see my latest posts
+## i also have a blog! see my latest posts
 <!--START_SECTION:blog_posts-->
 - [Shiny object syndrome](https://ggofri.vercel.app/blog/shiny-object) - Jul 29 2022
 - [It was always done this way](https://ggofri.vercel.app/blog/always-done-this-way) - Jul 29 2022
