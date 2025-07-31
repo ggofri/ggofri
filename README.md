@@ -25,9 +25,8 @@ Connect with me at [LinkedIn](https://linkedin.com/in/ggofri).
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
+- 🚀 Pushed commits to [ggofri/github-activity-updater](https://github.com/ggofri/github-activity-updater) - Jul 31
 - ✨ Created repository or branch [ggofri/github-activity-updater](https://github.com/ggofri/github-activity-updater) - Jul 31
+- 🚀 Pushed commits to [ggofri/github-activity-updater](https://github.com/ggofri/github-activity-updater) - Jul 31
 - ✨ Created repository or branch [ggofri/github-activity-updater](https://github.com/ggofri/github-activity-updater) - Jul 31
-- 🐛 Created/updated issue [#20](https://github.com/ggofri/ggofri/issues/20) in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Jul 30
-- 🐛 Created/updated issue [#19](https://github.com/ggofri/ggofri/issues/19) in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Jul 30
-- 🐛 Created/updated issue [#18](https://github.com/ggofri/ggofri/issues/18) in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Jul 30
 <!--END_SECTION:activity-->
