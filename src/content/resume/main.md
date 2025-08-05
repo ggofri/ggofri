@@ -67,9 +67,6 @@ github: "https://github.com/ggofri"
 
 ## Notable Projects
 
-### Ficus | Migration Platform
-Platform software for reliable migration of key backends with zero-downtime, high concurrency and low latency using Rust and Strangler Pattern.
-
 ### fake-end | NPM Dev Tool
 AI-assisted CLI tool enabling frontend engineers to spin up mock servers in seconds. Streamlines development workflow and reduces setup time.
 
