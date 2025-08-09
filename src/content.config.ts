@@ -3,7 +3,7 @@ import { defineCollection, z } from 'astro:content';
 
 const blog = defineCollection({
 	loader: glob({ base: './src/content/blog', pattern: '**/*.{md,mdx}' }),
-	schema: ({ image }) => z.object({
+	schema: ({image}) => z.object({
 		title: z.string(),
 		description: z.string(),
 		pubDate: z.coerce.date(),
@@ -14,7 +14,7 @@ const blog = defineCollection({
 
 const projects = defineCollection({
 	loader: glob({ base: './src/content/projects', pattern: '**/*.{md,mdx}' }),
-	schema: ({ image }) => z.object({
+	schema: z.object({
 		title: z.string(),
 		description: z.string(),
 		status: z.enum(['wip', 'released', 'planned', 'on hold']),
@@ -54,13 +54,6 @@ const future = defineCollection({
 
 const resume = defineCollection({
 	loader: glob({ base: './src/content/resume', pattern: '**/*.{md,mdx}' }),
-	schema: z.object({
-		name: z.string(),
-		title: z.string(),
-		location: z.string(),
-		linkedin: z.string().url().optional(),
-		github: z.string().url().optional(),
-	}),
 });
 
 export const collections = { blog, projects, draft, future, resume };
