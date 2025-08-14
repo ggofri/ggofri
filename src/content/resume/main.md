@@ -4,8 +4,6 @@
 
 ## Contact information
 
-**Phone:** (+54) 9 11 7367 8534  
-**Email:** ignaciojulianramirez@gmail.com  
 **Linkedin:** linkedin.com/in/ggofri  
 **Github:** github.com/ggofri  
 **Location:** Buenos Aires, Argentina (GMT-3). 
