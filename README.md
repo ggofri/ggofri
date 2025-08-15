@@ -25,14 +25,14 @@ Connect with me at [LinkedIn](https://linkedin.com/in/ggofri).
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
+- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 14
+- 🐛 Created/updated issue in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 14
+- 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 14
+- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 14
 - 💬 Commented on issue in [rupali-codes/LinksHub](https://github.com/rupali-codes/LinksHub) - Aug 11
 - 💬 Commented on issue in [vercel/vercel](https://github.com/vercel/vercel) - Aug 09
 - 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 09
 - 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 09
 - ✨ Created repository or branch [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 09
 - 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 03
-- 🚀 Pushed commits to [ggofri/github-activity-updater](https://github.com/ggofri/github-activity-updater) - Aug 03
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 03
-- ✨ Created repository or branch [ggofri/github-activity-updater](https://github.com/ggofri/github-activity-updater) - Aug 03
-- 🎉 Released version in [ggofri/github-activity-updater](https://github.com/ggofri/github-activity-updater) - Aug 03
 <!--END_SECTION:activity-->
