@@ -25,6 +25,7 @@ Connect with me at [LinkedIn](https://linkedin.com/in/ggofri).
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
+- 🚀 Pushed commits to [ggofri/LinksHub](https://github.com/ggofri/LinksHub) - Aug 15
 - 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 14
 - 🐛 Created/updated issue in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 14
 - 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 14
@@ -34,5 +35,4 @@ Connect with me at [LinkedIn](https://linkedin.com/in/ggofri).
 - 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 09
 - 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 09
 - ✨ Created repository or branch [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 09
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 03
 <!--END_SECTION:activity-->
