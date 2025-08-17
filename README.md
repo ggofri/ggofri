@@ -25,14 +25,14 @@ Connect with me at [LinkedIn](https://linkedin.com/in/ggofri).
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
-- 🐛 Created/updated issue in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 16
-- 🔄 Opened/updated PR in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 16
-- ✨ Created repository or branch [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 16
-- 🚀 Pushed commits to [ggofri/eslint-plugin-ban-comments](https://github.com/ggofri/eslint-plugin-ban-comments) - Aug 16
-- 🚀 Pushed commits to [ggofri/eslint-plugin-no-comments](https://github.com/ggofri/eslint-plugin-no-comments) - Aug 16
-- 🚀 Pushed commits to [ggofri/eslint-plugin-no-comments](https://github.com/ggofri/eslint-plugin-no-comments) - Aug 16
-- ✨ Created repository or branch [ggofri/eslint-plugin-no-comments](https://github.com/ggofri/eslint-plugin-no-comments) - Aug 16
-- ✨ Created repository or branch [ggofri/eslint-plugin-no-comments](https://github.com/ggofri/eslint-plugin-no-comments) - Aug 16
-- 🐛 Created/updated issue in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 15
-- 🐛 Created/updated issue in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 15
+- 🚀 Pushed commits to [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 17
+- 🐛 Created/updated issue in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 17
+- 🔄 Opened/updated PR in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 17
+- 🔄 Opened/updated PR in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 17
+- ✨ Created repository or branch [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 17
+- 🐛 Created/updated issue in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 17
+- 🐛 Created/updated issue in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 17
+- 🚀 Pushed commits to [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 17
+- 🐛 Created/updated issue in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 17
+- 🔄 Opened/updated PR in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 17
 <!--END_SECTION:activity-->
