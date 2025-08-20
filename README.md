@@ -25,14 +25,14 @@ Connect with me at [LinkedIn](https://linkedin.com/in/ggofri).
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
+- 🚀 Pushed commits to [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
+- 🔄 Opened/updated PR in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
+- 🐛 Created/updated issue in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
+- 🔄 Opened/updated PR in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
+- 🚀 Pushed commits to [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
+- 🔄 Opened/updated PR in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
+- 🔄 Opened/updated PR in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
+- ✨ Created repository or branch [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
+- ✨ Created repository or branch [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
 - 🚀 Pushed commits to [ggofri/eslint-plugin-ban-comments](https://github.com/ggofri/eslint-plugin-ban-comments) - Aug 18
-- ⭐ Starred [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 18
-- ⭐ Starred [ggofri/github-activity-updater](https://github.com/ggofri/github-activity-updater) - Aug 18
-- ⭐ Starred [ggofri/eslint-plugin-ban-comments](https://github.com/ggofri/eslint-plugin-ban-comments) - Aug 18
-- ⭐ Starred [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 18
-- 🚀 Pushed commits to [ggofri/eslint-plugin-ban-comments](https://github.com/ggofri/eslint-plugin-ban-comments) - Aug 18
-- 🚀 Pushed commits to [ggofri/eslint-plugin-ban-comments](https://github.com/ggofri/eslint-plugin-ban-comments) - Aug 18
-- 🚀 Pushed commits to [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 17
-- 🚀 Pushed commits to [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 17
-- 🚀 Pushed commits to [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 17
 <!--END_SECTION:activity-->
