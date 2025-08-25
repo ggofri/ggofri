@@ -19,8 +19,9 @@ Connect with me at [LinkedIn](https://linkedin.com/in/ggofri).
 
 ## I also have a blog! See my latest posts
 <!--START_SECTION:blog_posts-->
-- [Shiny object syndrome](https://ggofri.vercel.app/blog/shiny-object) - Jul 29 2022
-- [It was always done this way](https://ggofri.vercel.app/blog/always-done-this-way) - Jul 29 2022
+- [Your unfair advantage: show your work](https://ggofri.vercel.app/blog/unfair-advantage) - Aug 24 2025
+- [Shiny object syndrome](https://ggofri.vercel.app/blog/shiny-object) - Jul 29 2025
+- [It was always done this way](https://ggofri.vercel.app/blog/always-done-this-way) - Jul 29 2025
 <!--END_SECTION:blog_posts-->
 
 ## :zap: Recent activity
