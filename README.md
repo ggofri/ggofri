@@ -26,14 +26,14 @@ Connect with me at [LinkedIn](https://linkedin.com/in/ggofri).
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
+- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 25
+- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 25
+- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 25
+- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 25
+- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Aug 25
 - 🚀 Pushed commits to [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 20
 - 🚀 Pushed commits to [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
 - 🔄 Opened/updated PR in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
 - 🐛 Created/updated issue in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
 - 🔄 Opened/updated PR in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
-- 🚀 Pushed commits to [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
-- 🔄 Opened/updated PR in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
-- 🔄 Opened/updated PR in [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
-- ✨ Created repository or branch [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
-- ✨ Created repository or branch [ggofri/fake-end](https://github.com/ggofri/fake-end) - Aug 19
 <!--END_SECTION:activity-->
