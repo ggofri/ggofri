@@ -26,4 +26,7 @@ Connect with me at [LinkedIn](https://linkedin.com/in/ggofri).
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
+- 🚀 Pushed commits to [ggofri/register](https://github.com/ggofri/register) - Oct 06
+- 🚀 Pushed commits to [ggofri/register](https://github.com/ggofri/register) - Oct 06
+- 🍴 Forked [is-a-dev/register](https://github.com/is-a-dev/register) - Oct 06
 <!--END_SECTION:activity-->
