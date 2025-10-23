@@ -120,7 +120,7 @@
     </section>
   </div>
 
-  <script>
+   <script>
     import { gsap } from 'gsap';
     import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -129,7 +129,9 @@
     const fixedCircle = document.getElementById('fixed-circle');
 
     // Ages corresponding to sections
-    const ages = ['0', '10', '15', '18', '21', '24', '25', '25'];
+    const ages = [0, 10, 15, 18, 21, 24, 25, 25];
+
+    let currentAge = 0;
 
     // Get all sections
     const sections = document.querySelectorAll('section');
@@ -140,12 +142,26 @@
         start: 'top center',
         end: 'bottom center',
         onEnter: () => {
-          if (fixedCircle) fixedCircle.textContent = ages[index] || '';
+          animateAge(ages[index]);
         },
         onEnterBack: () => {
-          if (fixedCircle) fixedCircle.textContent = ages[index] || '';
+          animateAge(ages[index]);
         },
       });
     });
+
+    function animateAge(targetAge) {
+      gsap.to({ value: currentAge }, {
+        value: targetAge,
+        duration: Math.abs(targetAge - currentAge) * 0.1,
+        ease: "none",
+        onUpdate: function() {
+          if (fixedCircle) fixedCircle.textContent = Math.floor(this.targets()[0].value);
+        },
+        onComplete: function() {
+          currentAge = targetAge;
+        }
+      });
+    }
   </script>
 </div>
