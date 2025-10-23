@@ -1,5 +1,5 @@
 <div class="relative">
-   <div class="space-y-[21rem] relative">
+   <div class="space-y-28 relative">
      <!-- Timeline line -->
      <div class="absolute left-6 top-0 bottom-0 w-px bg-border/50"></div>
 
@@ -8,7 +8,7 @@
        <div id="fixed-circle" class="w-14 h-14 bg-foreground text-background rounded-full flex items-center justify-center text-lg font-bold">0</div>
      </div>
      <!-- My Philosophy -->
-     <section class="relative pl-32 space-y-3 mt-0">
+     <section class="relative pl-32 space-y-3">
       <div class="text-xs font-semibold text-muted-foreground uppercase tracking-wide">My Philosophy</div>
       <p class="text-base leading-relaxed">
         My thoughts are shaped by three guiding forces: my faith in Christ, Amor Fati, and Essentialism. These principles teach me
@@ -173,7 +173,7 @@
     sections.forEach((section, index) => {
       ScrollTrigger.create({
         trigger: section,
-        start: 'center bottom',
+        start: 'top center',
         end: 'bottom center',
         onEnter: () => {
           animateAge(ages[index]);
