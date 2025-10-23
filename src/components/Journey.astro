@@ -119,25 +119,28 @@
        </div>
      </section>
 
-     <!-- Next Goals -->
-     <section class="relative pl-32 space-y-3">
-       <div class="text-xs font-semibold text-muted-foreground uppercase tracking-wide">Next Goals</div>
-       <p class="text-base leading-relaxed">
-         My next milestones: $2k SaaS MRR by Dec 2025, $5k MRR by March 2026, and 5k Twitter followers by March 2025. These goals are just a way to keep a clear path in mind as I build.
-       </p>
-       <div class="bg-muted/30 pl-4 py-3 border-l border-border">
-         <p class="text-sm font-semibold mb-2">Want to partner on this journey?</p>
-         <button
-           data-cal-link="ggofri/30min"
-           data-cal-namespace="30min"
-           data-cal-config='{"layout":"month_view"}'
-           class="inline-block px-4 py-2 bg-foreground text-background font-semibold rounded-lg hover:opacity-90 transition-opacity text-sm"
-         >
-           Partner with me →
-         </button>
-       </div>
-     </section>
    </div>
+
+  <!-- Next Goals and CTA -->
+  <div class="mt-20 space-y-8">
+    <div class="text-center space-y-4">
+      <div class="text-xs font-semibold text-muted-foreground uppercase tracking-wide">Next Goals</div>
+      <p class="text-base leading-relaxed max-w-2xl mx-auto">
+        My next milestones: $2k SaaS MRR by Dec 2025, $5k MRR by March 2026, and 5k Twitter followers by March 2025. These goals are just a way to keep a clear path in mind as I build.
+      </p>
+    </div>
+    <div class="text-center">
+      <p class="text-sm font-semibold mb-4">Want to partner on this journey?</p>
+      <button
+        data-cal-link="ggofri/30min"
+        data-cal-namespace="30min"
+        data-cal-config='{"layout":"month_view"}'
+        class="inline-block px-6 py-3 bg-foreground text-background font-semibold rounded-lg hover:opacity-90 transition-opacity"
+      >
+        Partner with me →
+      </button>
+    </div>
+  </div>
 
    <script>
     import { gsap } from 'gsap';
@@ -155,7 +158,7 @@
     if (m < 0 || (m === 0 && now.getDate() < birthDate.getDate())) {
       calculatedAge--;
     }
-    const ages = [0, 10, 15, 18, 21, 24, 25, calculatedAge, calculatedAge];
+    const ages = [0, 10, 15, 18, 21, 24, 25, calculatedAge];
 
     let currentDisplayedAge = 0;
 
