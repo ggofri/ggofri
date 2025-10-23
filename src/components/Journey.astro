@@ -129,7 +129,14 @@
     const fixedCircle = document.getElementById('fixed-circle');
 
     // Ages corresponding to sections
-    const ages = [0, 10, 15, 18, 21, 24, 25, 25];
+    const birthDate = new Date('2000-03-05');
+    const now = new Date();
+    let currentAge = now.getFullYear() - birthDate.getFullYear();
+    const m = now.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && now.getDate() < birthDate.getDate())) {
+      currentAge--;
+    }
+    const ages = [0, 10, 15, 18, 21, 24, 25, currentAge];
 
     let currentAge = 0;
 
