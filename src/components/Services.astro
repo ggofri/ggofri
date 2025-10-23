@@ -1,0 +1,44 @@
+---
+const services = [
+  {
+    title: "Fractional CTO",
+    description: "Technical leadership and product strategy. I help you build the right product, the right way.",
+    cta: "Discuss your tech stack",
+  },
+  {
+    title: "Growth Engineer",
+    description: "Product-led growth strategy and execution. From acquisition to retention, I help you scale.",
+    cta: "Let's grow together",
+  },
+  {
+    title: "Cofounder",
+    description: "Have an idea? Let's talk. I'm looking for the next thing to build.",
+    cta: "Pitch me your idea",
+  },
+]
+---
+
+<section id="services" class="border-t border-border/50 py-20">
+  <div class="max-w-3xl mx-auto px-6">
+    <h2 class="text-lg font-semibold mb-16 text-muted-foreground">how i can help</h2>
+
+    <div class="space-y-12">
+      {services.map((service) => (
+        <div class="space-y-4">
+          <h3 class="text-2xl font-semibold">{service.title}</h3>
+          <p class="text-base text-muted-foreground leading-relaxed">{service.description}</p>
+          <div class="pt-2">
+            <a
+              href="https://www.ggofri.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm font-semibold hover:opacity-70 transition-opacity"
+            >
+              {service.cta} →
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

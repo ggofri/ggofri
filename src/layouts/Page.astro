@@ -5,6 +5,7 @@ import Footer from "../components/layout/Footer.astro";
 import RssIcon from "../components/ui/RssIcon.astro";
 import FormattedDate from "../components/ui/FormattedDate.astro";
 import { Image } from "astro:assets";
+import "../styles/global.css";
 
 interface Props {
 	title?: string;
@@ -31,9 +32,14 @@ const parsedUpdatedDate = actualUpdatedDate
 <html lang="en">
 	<head>
 		<BaseHead title={actualTitle} description={actualDescription} />
+		<script>
+			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.classList.add('dark');
+			}
+		</script>
 	</head>
 
-	<body>
+	<body class="bg-background text-foreground">
 		<Nav />
 		<main>
 			<article>
