@@ -131,14 +131,14 @@
     // Ages corresponding to sections
     const birthDate = new Date('2000-03-05');
     const now = new Date();
-    let currentAge = now.getFullYear() - birthDate.getFullYear();
+    let calculatedAge = now.getFullYear() - birthDate.getFullYear();
     const m = now.getMonth() - birthDate.getMonth();
     if (m < 0 || (m === 0 && now.getDate() < birthDate.getDate())) {
-      currentAge--;
+      calculatedAge--;
     }
-    const ages = [0, 10, 15, 18, 21, 24, 25, currentAge];
+    const ages = [0, 10, 15, 18, 21, 24, 25, calculatedAge];
 
-    let currentAge = 0;
+    let currentDisplayedAge = 0;
 
     // Get all sections
     const sections = document.querySelectorAll('section');
@@ -158,15 +158,15 @@
     });
 
     function animateAge(targetAge) {
-      gsap.to({ value: currentAge }, {
+      gsap.to({ value: currentDisplayedAge }, {
         value: targetAge,
-        duration: Math.abs(targetAge - currentAge) * 0.08,
+        duration: Math.abs(targetAge - currentDisplayedAge) * 0.08,
         ease: "power2.inOut",
         onUpdate: function() {
           if (fixedCircle) fixedCircle.textContent = String(Math.floor(this.targets()[0].value));
         },
         onComplete: function() {
-          currentAge = targetAge;
+          currentDisplayedAge = targetAge;
         }
       });
     }
