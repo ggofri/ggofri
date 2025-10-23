@@ -153,10 +153,10 @@
     function animateAge(targetAge) {
       gsap.to({ value: currentAge }, {
         value: targetAge,
-        duration: Math.abs(targetAge - currentAge) * 0.1,
+        duration: Math.abs(targetAge - currentAge) * 0.05,
         ease: "none",
         onUpdate: function() {
-          if (fixedCircle) fixedCircle.textContent = Math.floor(this.targets()[0].value);
+          if (fixedCircle) fixedCircle.textContent = String(Math.floor(this.targets()[0].value));
         },
         onComplete: function() {
           currentAge = targetAge;
