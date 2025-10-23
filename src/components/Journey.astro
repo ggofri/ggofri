@@ -154,7 +154,7 @@
       gsap.to({ value: currentAge }, {
         value: targetAge,
         duration: Math.abs(targetAge - currentAge) * 0.08,
-        ease: "none",
+        ease: "power2.inOut",
         onUpdate: function() {
           if (fixedCircle) fixedCircle.textContent = String(Math.floor(this.targets()[0].value));
         },
