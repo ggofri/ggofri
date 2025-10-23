@@ -3,8 +3,10 @@ import type { CollectionEntry } from "astro:content";
 import BaseHead from "../components/layout/BaseHead.astro";
 import Nav from "../components/layout/Nav.astro";
 import Footer from "../components/layout/Footer.astro";
+import RssIcon from "../components/ui/RssIcon.astro";
 import FormattedDate from "../components/ui/FormattedDate.astro";
 import { Image } from "astro:assets";
+import "../styles/global.css";
 import PlaceholderImage from "../assets/blog/placeholder.jpg";
 
 type Props = CollectionEntry<"blog">["data"];
@@ -21,9 +23,14 @@ const parsedUpdatedDate = updatedDate
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} image={heroImage || PlaceholderImage} />
+		<script>
+			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.classList.add('dark');
+			}
+		</script>
 	</head>
 
-	<body>
+	<body class="bg-background text-foreground">
 		<Nav />
 		<main class="w-full max-w-none m-0">
 			<article>
