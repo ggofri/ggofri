@@ -1,21 +1,31 @@
 ---
-title: "Ficus"
-description: "Backend migrations with zero downtime"
-status: "wip"
-logo: "🌱"
-releaseInfo: "Open sourcing planned for Q4 2025"
-startDate: 2025-08-25
+title: "Torch.it"
+description: "AI-powered code review and development insights platform"
+status: "building in public"
+logo: "🔥"
+links:
+  - label: "Website"
+    url: "https://torch.it.com"
+startDate: 2025-10-01
 featured: true
 ---
 
-# Ficus
+# Torch.it
 
-Backend migration orchestrator with Strangler Pattern and BEAM VM.
+An AI-powered platform that provides intelligent code review suggestions, development insights, and team collaboration tools to help developers ship better code faster.
 
 ## Current Development
 
-Working on solution design and architecture decisions for the future of backend migrations
+Building the core AI engine for code analysis, implementing real-time collaboration features, and developing integrations with popular development tools.
+
+## Features
+
+- AI-powered code review suggestions
+- Real-time development insights
+- Team collaboration tools
+- Integrations with GitHub, GitLab, and more
+- Customizable review workflows
 
 ## Status
 
-Work in progress. Building the core of the migration pattern.
+Actively building in public. Currently in beta with select users. Open to feedback and contributions.

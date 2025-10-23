@@ -38,6 +38,8 @@
   --sidebar-accent-foreground: 0 0% 15%;
   --sidebar-border: 0 0% 92%;
   --sidebar-ring: 0 0% 15%;
+  --light-bg: oklch(92.3% 0.003 48.717);
+  --dark-bg: oklch(26.8% 0.007 34.298);
 }
 
 @layer base {
@@ -45,8 +47,14 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--light-bg);
+    @apply text-foreground;
+    text-transform: lowercase;
   }
+}
+
+.dark body {
+  background-color: var(--dark-bg);
 }
 
 .dark {
