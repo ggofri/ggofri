@@ -2,7 +2,6 @@
 title: "Your unfair advantage: show your work"
 description: "How to get more attention and better opportunities as a Software Engineer"
 pubDate: 'Aug 24 2025'
-heroImage: '../../assets/blog/brick-wall.jpg'
 ---
 
 Most software engineers are invisible. They write brilliant code behind closed doors, solve complex problems in silence, and wonder why opportunities pass them by.

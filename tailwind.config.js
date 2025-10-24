@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
     darkMode: ['class', 'media'],
-    content: ['./src/**/*.{astro,html,md,mdx,ts,tsx}'],
+    content: ['./src/**/*.{astro,html,md,mdx,ts,tsx}', './pages/**/*.{astro,html,md,mdx,ts,tsx}'],
    theme: {
    	extend: {
    		borderRadius: {
@@ -37,7 +37,7 @@ export default {
     		}
      	}
     },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
   corePlugins: {
     preflight: true,
   },

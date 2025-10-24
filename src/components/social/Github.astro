@@ -1,7 +1,7 @@
 ---
 const { repo } = Astro.props;
 ---
-<a href={`https://github.com/ggofri/${repo || ''}`} target="_blank">
+<a href={`https://github.com/ggofri/${repo || ''}`} target="_blank" class="text-muted-foreground transition-colors hover:text-foreground">
     <span class="sr-only">See my Github account</span>
     <svg viewBox="0 0 16 16" aria-hidden="true" width="24" height="24"
         ><path

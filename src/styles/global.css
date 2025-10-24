@@ -57,6 +57,46 @@
   background-color: var(--dark-bg);
 }
 
+/* Prose theme integration */
+.prose {
+  color: hsl(var(--foreground));
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  color: hsl(var(--foreground));
+}
+
+.prose strong {
+  color: hsl(var(--foreground));
+}
+
+.prose a {
+  color: hsl(var(--foreground));
+}
+
+.prose code {
+  color: hsl(var(--foreground));
+  background-color: hsl(var(--muted));
+}
+
+.prose pre {
+  background-color: hsl(var(--muted));
+}
+
+.prose blockquote {
+  color: hsl(var(--muted-foreground));
+  border-left-color: hsl(var(--border));
+}
+
+.prose hr {
+  border-color: hsl(var(--border));
+}
+
 .dark {
   --background: 0 0% 12%;
   --foreground: 0 0% 95%;

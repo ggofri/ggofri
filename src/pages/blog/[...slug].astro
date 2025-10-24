@@ -1,6 +1,8 @@
 ---
-import { type CollectionEntry, getCollection, render } from 'astro:content';
-import BlogPost from '../../layouts/BlogPost.astro';
+import { getCollection, render } from 'astro:content';
+import Navigation from "../../components/Navigation.astro"
+import FormattedDate from "../../components/ui/FormattedDate.astro"
+import "../../styles/global.css"
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
@@ -9,12 +11,46 @@ export async function getStaticPaths() {
 		props: post,
 	}));
 }
-type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
 const { Content } = await render(post);
+const wordCount = post.body.split(/\s+/).length;
+const readingTime = Math.ceil(wordCount / 200);
 ---
 
-<BlogPost {...post.data}>
-	<Content />
-</BlogPost>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{post.data.title}</title>
+    <meta name="description" content={post.data.description} />
+    <script>
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+  </head>
+  <body class="text-foreground">
+    <Navigation />
+     <main class="max-w-2xl mx-auto px-6 py-32">
+       <a href="/blog" class="text-sm text-muted-foreground hover:text-foreground transition-colors mb-8 inline-block">← Back to blog</a>
+       <div class="mb-16">
+         <h1 class="text-3xl font-bold mb-2">{post.data.title}</h1>
+        <p class="text-muted-foreground mb-4">{post.data.description}</p>
+         <div class="text-sm text-muted-foreground">
+           <FormattedDate date={post.data.pubDate} />
+           <span class="ml-2">• {readingTime} min read</span>
+           {post.data.updatedDate && (
+             <span class="ml-2">
+               • Updated <FormattedDate date={post.data.updatedDate} />
+             </span>
+           )}
+         </div>
+      </div>
+      <article class="prose prose-lg dark:prose-invert max-w-none">
+        <Content />
+      </article>
+    </main>
+  </body>
+</html>
