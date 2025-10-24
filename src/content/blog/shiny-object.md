@@ -2,7 +2,6 @@
 title: "Shiny object syndrome"
 description: "Stop adopting always the latest when they've been just launched"
 pubDate: 'Jul 29 2025'
-heroImage: '../../assets/blog/shiny-object.png'
 ---
 
 ## Stop adopting the latest tools just because they shine

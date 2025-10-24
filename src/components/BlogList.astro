@@ -9,7 +9,7 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 <div class="space-y-8">
   {posts.map((post) => (
     <article class="pb-8 border-b border-border last:border-b-0">
-      <a href={`/blog/${post.slug}`} class="group">
+      <a href={`/blog/${post.id}`} class="group">
         <h2 class="text-lg font-semibold mb-2 group-hover:text-muted-foreground transition-colors">
           {post.data.title}
         </h2>
