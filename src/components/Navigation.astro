@@ -1,12 +1,14 @@
 ---
 import SocialList from "./social/SocialList.astro";
+import Logo from "../assets/logo.svg";
+import { Image } from "astro:assets";
 const pathname = Astro.url.pathname;
 ---
 
 <div class="border-b border-border/50">
   <div class="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
-    <a href="/" class="text-sm font-semibold hover:opacity-70 transition-opacity">
-      ggofri
+    <a href="/">
+      <Image src={Logo} alt="ggofri logo" height="30px"/>
     </a>
     <div class="flex items-center gap-6">
       <a
