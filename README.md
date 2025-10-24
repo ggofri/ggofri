@@ -26,5 +26,6 @@ Connect with me at [LinkedIn](https://linkedin.com/in/ggofri).
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
+- ✨ Created repository or branch [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 23
 - 💬 Commented on issue in [vercel/vercel](https://github.com/vercel/vercel) - Oct 18
 <!--END_SECTION:activity-->
