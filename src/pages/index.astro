@@ -22,22 +22,28 @@ import "../styles/global.css"
 		<!-- Cal element-click embed code begins -->
 		<script type="text/javascript">
 			(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-			Cal("init", "30min", {origin:"https://app.cal.com"});
+			Cal("init", "general", {origin:"https://app.cal.com"});
+			Cal("init", "cto", {origin:"https://app.cal.com"});
+			Cal("init", "growth", {origin:"https://app.cal.com"});
+			Cal("init", "cofounder", {origin:"https://app.cal.com"});
 
-			
+
 			// Important: Please add the following attributes to the element that should trigger the calendar to open upon clicking.
-			// `data-cal-link="ggofri/30min"`
-			// data-cal-namespace="30min"
+			// `data-cal-link="ggofri/let-s-talk"`
+			// data-cal-namespace="general"
 			// `data-cal-config='{"layout":"week_view"}'`
 
-			Cal.ns["30min"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#303030"},"dark":{"cal-brand":"#eaaeea"}},"hideEventTypeDetails":false,"layout":"month_view"});
+			Cal.ns["general"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#303030"},"dark":{"cal-brand":"#eaaeea"}},"hideEventTypeDetails":false,"layout":"month_view"});
+			Cal.ns["cto"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#303030"},"dark":{"cal-brand":"#eaaeea"}},"hideEventTypeDetails":false,"layout":"month_view"});
+			Cal.ns["growth"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#303030"},"dark":{"cal-brand":"#eaaeea"}},"hideEventTypeDetails":false,"layout":"month_view"});
+			Cal.ns["cofounder"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#303030"},"dark":{"cal-brand":"#eaaeea"}},"hideEventTypeDetails":false,"layout":"month_view"});
 		</script>
 		<!-- Cal element-click embed code ends -->
 	</head>
 	<body class="text-foreground">
 		<Navigation />
 		<main class="max-w-3xl mx-auto px-6">
-			<section class="py-36 md:py-44">
+			<section id="hero" class="py-36 md:py-44">
 				<h1 class="text-5xl md:text-6xl font-bold mb-8 text-balance leading-tight">i help startups scale</h1>
 
 				<p class="text-lg text-muted-foreground mb-16 max-w-2xl leading-relaxed">
@@ -67,7 +73,7 @@ import "../styles/global.css"
 				</a>
 			</section>
 
-			<section class="py-16 border-t border-border/50">
+			<section id="projects" class="py-16 border-t border-border/50">
 				<h2 class="text-lg font-semibold mb-12 text-muted-foreground">what i'm building now</h2>
 				<ProjectsList />
 			</section>

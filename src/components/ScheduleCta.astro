@@ -1,0 +1,12 @@
+---
+const { text = "Schedule a call →" } = Astro.props;
+---
+
+<button
+  data-cal-link="ggofri/let-s-talk"
+  data-cal-namespace="general"
+  data-cal-config='{"layout":"month_view"}'
+  class="inline-block px-6 py-3 bg-foreground text-background font-semibold rounded-lg hover:opacity-90 transition-opacity"
+>
+  {text}
+</button>
