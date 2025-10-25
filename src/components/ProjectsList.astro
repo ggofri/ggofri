@@ -1,7 +1,11 @@
 ---
+// Import Astro's content collection API
 import { getCollection } from 'astro:content';
 
+// Fetch all projects from the content collection
 const projects = await getCollection('projects');
+
+// Sort projects by start date, most recent first
 projects.sort((a, b) => {
   const aDate = a.data.startDate || new Date(0);
   const bDate = b.data.startDate || new Date(0);
