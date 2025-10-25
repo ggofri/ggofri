@@ -1,0 +1,51 @@
+---
+interface Props {
+    items: string[];
+    duration?: number;
+    pauseOnHover?: boolean;
+}
+
+const { items, duration = 30, pauseOnHover = true } = Astro.props;
+---
+
+<div
+    class="ticker-container relative w-full overflow-hidden"
+    aria-label="companies ggofri have collaborated with"
+>
+    <div class="hidden">
+        {items.map(item => item)}
+    </div>
+    <div
+        class={`ticker-scroller flex w-max gap-4 ${pauseOnHover ? "pause-on-hover" : ""}`}
+        style={`animation-duration: ${duration}s;`}
+    >
+        {
+            [...items, ...items].map((item) => (
+                <div
+                    class="px-4 md:px-12 py-8 text-lg font-bold tracking-widest text-neutral-500 aria-hidden"
+                >
+                    {item}
+                </div>
+            ))
+        }
+    </div>
+</div>
+
+<style>
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .ticker-scroller {
+        animation: scroll linear infinite;
+    }
+
+    .pause-on-hover:hover {
+        animation-play-state: paused;
+    }
+</style>
