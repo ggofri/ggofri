@@ -28,3 +28,9 @@ pnpm-debug.log*
 
 # Updated resume
 *.pdf
+
+# Speckit and agent files
+AGENTS.md
+.specify/
+specs/
+.opencode/
