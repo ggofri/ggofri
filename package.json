@@ -6,8 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "download-resume": "tsx scripts/download-resume.ts"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.1",
