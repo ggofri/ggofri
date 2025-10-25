@@ -6,8 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "download-resume": "tsx scripts/download-resume.ts"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.1",
@@ -19,15 +18,13 @@
     "@tailwindcss/typography": "^0.5.19",
     "astro": "^5.12.3",
     "gsap": "^3.13.0",
-    "md-to-pdf": "^5.2.4",
     "sharp": "^0.34.2",
+    "tailwind-merge": "^3.3.1",
     "tailwindcss": "^3.4.17",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^22.8.6",
-    "puppeteer": "^23.9.0",
-    "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   }
 }

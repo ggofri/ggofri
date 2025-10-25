@@ -30,29 +30,12 @@ const projects = defineCollection({
 	}),
 });
 
-const draft = defineCollection({
-	loader: glob({ base: './src/content/draft', pattern: '**/*.{md,mdx}' }),
+const pages = defineCollection({
+	loader: glob({ base: './src/content/pages', pattern: '**/*.{md,mdx}' }),
 	schema: z.object({
 		title: z.string(),
-		description: z.string().optional(),
-		plannedDate: z.string().optional(),
-		progress: z.enum(['outlined', 'writing', 'reviewing', 'ready']).optional(),
+		description: z.string(),
 	}),
 });
 
-const future = defineCollection({
-	loader: glob({ base: './src/content/future', pattern: '**/*.{md,mdx}' }),
-	schema: z.object({
-		year: z.number(),
-		quarter: z.number(),
-		items: z.array(z.object({
-			title: z.string(),
-		})),
-	}),
-});
-
-const resume = defineCollection({
-	loader: glob({ base: './src/content/resume', pattern: '**/*.{md,mdx}' }),
-});
-
-export const collections = { blog, projects, draft, future, resume };
+export const collections = { blog, projects, pages };

@@ -1,0 +1,35 @@
+---
+import Navigation from "../components/Navigation.astro";
+import CalEmbed from "../components/CalEmbed.astro";
+import "../styles/global.css";
+
+export interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<script>
+			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.classList.add('dark');
+			}
+		</script>
+		<CalEmbed />
+	</head>
+	<body class="text-foreground">
+		<a href="#main-content" class="skip-link">Skip to main content</a>
+		<Navigation />
+		<main id="main-content" class="max-w-3xl mx-auto px-6">
+			<slot />
+		</main>
+	</body>
+</html>

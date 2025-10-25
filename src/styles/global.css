@@ -55,6 +55,27 @@ html {
     @apply text-foreground;
     text-transform: lowercase;
   }
+
+  /* Accessibility */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: hsl(var(--foreground));
+    color: hsl(var(--background));
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+  }
+
+  .skip-link:focus {
+    top: 6px;
+  }
+
+  a:focus, button:focus {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
 }
 
 .dark body {

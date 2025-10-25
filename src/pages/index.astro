@@ -1,86 +1,45 @@
 ---
-import Navigation from "../components/Navigation.astro"
-import ProjectsList from "../components/ProjectsList.astro"
-import Services from "../components/Services.astro"
-import Cta from "../components/Cta.astro"
-import "../styles/global.css"
+import PageLayout from "../layouts/PageLayout.astro";
+import ProjectsList from "../components/ProjectsList.astro";
+import Services from "../components/Services.astro";
+import Cta from "../components/Cta.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Julian Ramirez | Growth Engineer & Indie Dev</title>
-		<meta name="description" content="Growth engineer, indie developer, and founder of ggofri software agency" />
-		<script>
-			const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-			if (isDark) {
-				document.documentElement.classList.add('dark');
-			}
-		</script>
-		<!-- Cal element-click embed code begins -->
-		<script type="text/javascript">
-			(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-			Cal("init", "general", {origin:"https://app.cal.com"});
-			Cal("init", "cto", {origin:"https://app.cal.com"});
-			Cal("init", "growth", {origin:"https://app.cal.com"});
-			Cal("init", "cofounder", {origin:"https://app.cal.com"});
+<PageLayout title="Julian Ramirez | Growth Engineer & Indie Dev" description="Growth engineer, indie developer, and founder of ggofri software agency">
+	<section id="hero" class="py-36 md:py-44">
+		<h1 class="text-4xl md:text-6xl font-bold mb-8">i help startups scale</h1>
+		<p class="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl">
+			combining product thinking with growth strategy to build products people love and reach the right users.
+		</p>
+		<div class="grid md:grid-cols-3 gap-8 mt-16">
+			<div>
+				<h2 class="text-lg font-semibold mb-2">product + growth</h2>
+				<p class="text-sm text-muted-foreground">i understand both sides of building and scaling</p>
+			</div>
+			<div>
+				<h2 class="text-lg font-semibold mb-2">hands-on</h2>
+				<p class="text-sm text-muted-foreground">i ship my own products, not just theory</p>
+			</div>
+			<div>
+				<h2 class="text-lg font-semibold mb-2">opinionated</h2>
+				<p class="text-sm text-muted-foreground">i believe in shipping fast and learning from users</p>
+			</div>
+		</div>
+	</section>
 
+	<section class="py-12 border-t border-border/50">
+		<p class="text-sm text-muted-foreground mb-2">interested in working together?</p>
+		<a href="#services" class="inline-block text-sm font-semibold hover:opacity-70 transition-opacity cursor-pointer">
+			see what i offer →
+		</a>
+	</section>
 
-			// Important: Please add the following attributes to the element that should trigger the calendar to open upon clicking.
-			// `data-cal-link="ggofri/let-s-talk"`
-			// data-cal-namespace="general"
-			// `data-cal-config='{"layout":"week_view"}'`
+	<section id="projects" class="py-16 border-t border-border/50">
+		<h2 class="text-lg font-semibold mb-12 text-muted-foreground">what i'm building now</h2>
+		<ProjectsList />
+	</section>
 
-			Cal.ns["general"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#303030"},"dark":{"cal-brand":"#eaaeea"}},"hideEventTypeDetails":false,"layout":"month_view"});
-			Cal.ns["cto"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#303030"},"dark":{"cal-brand":"#eaaeea"}},"hideEventTypeDetails":false,"layout":"month_view"});
-			Cal.ns["growth"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#303030"},"dark":{"cal-brand":"#eaaeea"}},"hideEventTypeDetails":false,"layout":"month_view"});
-			Cal.ns["cofounder"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#303030"},"dark":{"cal-brand":"#eaaeea"}},"hideEventTypeDetails":false,"layout":"month_view"});
-		</script>
-		<!-- Cal element-click embed code ends -->
-	</head>
-	<body class="text-foreground">
-		<Navigation />
-		<main class="max-w-3xl mx-auto px-6">
-			<section id="hero" class="py-36 md:py-44">
-				<h1 class="text-5xl md:text-6xl font-bold mb-8 text-balance leading-tight">i help startups scale</h1>
+	<Services />
 
-				<p class="text-lg text-muted-foreground mb-16 max-w-2xl leading-relaxed">
-					combining product thinking with growth strategy to build products people love and reach the right users.
-				</p>
-
-				<div class="space-y-6">
-					<div class="flex gap-4">
-						<div class="text-sm font-semibold text-foreground flex-shrink-0 w-24">product + growth</div>
-						<p class="text-sm text-muted-foreground">i understand both sides of building and scaling</p>
-					</div>
-					<div class="flex gap-4">
-						<div class="text-sm font-semibold text-foreground flex-shrink-0 w-24">hands-on</div>
-						<p class="text-sm text-muted-foreground">i ship my own products, not just theory</p>
-					</div>
-					<div class="flex gap-4">
-						<div class="text-sm font-semibold text-foreground flex-shrink-0 w-24">opinionated</div>
-						<p class="text-sm text-muted-foreground">i believe in shipping fast and learning from users</p>
-					</div>
-				</div>
-			</section>
-
-			<section class="py-12 border-t border-border/50">
-				<p class="text-sm text-muted-foreground mb-2">interested in working together?</p>
-				<a href="#services" class="inline-block text-sm font-semibold hover:opacity-70 transition-opacity">
-					see what i offer →
-				</a>
-			</section>
-
-			<section id="projects" class="py-16 border-t border-border/50">
-				<h2 class="text-lg font-semibold mb-12 text-muted-foreground">what i'm building now</h2>
-				<ProjectsList />
-			</section>
-		</main>
-
-		<Services />
-
-		<Cta />
-	</body>
-</html>
+	<Cta />
+</PageLayout>

@@ -1,12 +1,15 @@
 ---
-const { text = "Schedule a call →" } = Astro.props;
+const { text = "Schedule a call →", calLink = "ggofri/let-s-talk", namespace = "general", variant = "button" } = Astro.props;
 ---
 
 <button
-  data-cal-link="ggofri/let-s-talk"
-  data-cal-namespace="general"
-  data-cal-config='{"layout":"month_view"}'
-  class="inline-block px-6 py-3 bg-foreground text-background font-semibold rounded-lg hover:opacity-90 transition-opacity"
+  data-cal-link={calLink}
+  data-cal-namespace={namespace}
+  class={`inline-block font-semibold transition-opacity cursor-pointer ${
+    variant === "text"
+      ? "text-sm hover:opacity-70"
+      : "px-6 py-3 bg-foreground text-background rounded-lg hover:opacity-90"
+  }`}
 >
   {text}
 </button>
