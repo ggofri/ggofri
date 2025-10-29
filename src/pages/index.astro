@@ -3,6 +3,7 @@ import PageLayout from "../layouts/PageLayout.astro";
 import ProjectsList from "../components/ProjectsList.astro";
 import Services from "../components/Services.astro";
 import Cta from "../components/Cta.astro";
+import ScheduleCta from "../components/ScheduleCta.astro";
 import Ticker from "../components/ui/Ticker.astro";
 
 const tickerItems = [
@@ -18,40 +19,37 @@ const tickerItems = [
 ---
 
 <PageLayout title="Julian Ramirez | Growth Engineer & Indie Dev" description="Growth engineer, indie developer, and founder of ggofri software agency">
-	<section id="hero" class="pt-32 pb-12">
-		<h1 class="text-4xl md:text-6xl font-bold mb-8">i help startups scale</h1>
-		<p class="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl">
-			combining product thinking with growth strategy to build products people love and reach the right users.
+	<section id="hero" class="pt-64 pb-32">
+    <h1 class="text-4xl md:text-6xl font-bold mb-16 tracking-wider">i help startups grow</h1>
+		<p class="text-lg font-normal tracking-normal text-muted-foreground mt-4 mb-8 max-w-2xl">
+      combining product thinking with experimentation strategy to build products users obsess with
 		</p>
-		<div class="grid md:grid-cols-3 gap-8 mt-16">
-			<div>
-				<h2 class="text-lg font-semibold mb-2">product + growth</h2>
-				<p class="text-sm text-muted-foreground">i understand both sides of building and scaling</p>
-			</div>
-			<div>
-				<h2 class="text-lg font-semibold mb-2">hands-on</h2>
-				<p class="text-sm text-muted-foreground">i ship my own products, not just theory</p>
-			</div>
-			<div>
-				<h2 class="text-lg font-semibold mb-2">opinionated</h2>
-				<p class="text-sm text-muted-foreground">i believe in shipping fast and learning from users</p>
-			</div>
+     <div class="text-base tracking-normal py-8">
+		  <p class="text-muted-foreground mb-2">interested in working together?</p>
+       <ScheduleCta text="book a call →"/>
+     </div>
+     <div class="mt-24">
+       <Ticker items={tickerItems} />
+     </div>
+	</section>
+
+	<section class="grid md:grid-cols-3 gap-8 my-32">
+		<div>
+			<h2 class="text-lg font-bold mb-2">product + growth</h2>
+			<p class="text-lg text-muted-foreground">i understand both sides of building and scaling</p>
 		</div>
+		<div>
+		  <h2 class="text-lg font-bold mb-2">hands-on</h2>
+			<p class="text-lg text-muted-foreground">i ship my own products, not just theory</p>
+		</div>
+		<div>
+			<h2 class="text-lg font-bold mb-2">opinionated</h2>
+			<p class="text-lg text-muted-foreground">i believe in shipping fast and learning from users</p>
+	  </div>
 	</section>
 
-	<section>
-		<Ticker items={tickerItems} />
-	</section>
-
-	<section class="py-12">
-		<p class="text-sm text-muted-foreground mb-2">interested in working together?</p>
-		<a href="#services" class="inline-block text-sm font-semibold hover:opacity-70 transition-opacity cursor-pointer">
-			see what i offer →
-		</a>
-	</section>
-
-	<section id="projects" class="py-16 border-t border-border/50">
-		<h2 class="text-lg font-semibold mb-12 text-muted-foreground">what i'm building now</h2>
+	<section id="projects" class="py-32 border-t border-border/50">
+		<h2 class="text-lg font-bold mb-12 text-muted-foreground">in-house products</h2>
 		<ProjectsList />
 	</section>
 
