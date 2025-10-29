@@ -8,21 +8,20 @@ interface Props {
 const { items, duration = 30, pauseOnHover = true } = Astro.props;
 ---
 
-<div
-    class="ticker-container relative w-full overflow-hidden"
-    aria-label="companies ggofri have collaborated with"
->
+<div class="ticker-container relative w-full overflow-hidden">
+    <h2 class="text-sm">trusted by</h2>
     <div class="hidden">
         {items.map(item => item)}
     </div>
     <div
+        aria-hidden="true"
         class={`ticker-scroller flex w-max gap-4 ${pauseOnHover ? "pause-on-hover" : ""}`}
         style={`animation-duration: ${duration}s;`}
     >
         {
             [...items, ...items].map((item) => (
                 <div
-                    class="px-4 md:px-12 py-8 text-lg font-bold tracking-widest text-neutral-500 aria-hidden"
+                    class="px-8 py-8 text-lg font-bold tracking-wider text-neutral-500 aria-hidden"
                 >
                     {item}
                 </div>

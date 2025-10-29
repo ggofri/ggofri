@@ -13,7 +13,7 @@ projects.sort((a, b) => {
 });
 ---
 
-<div class="space-y-6">
+<div class="space-y-8">
   {projects.map((project) => {
     const href = project.data.links?.[0]?.url || "#";
     const status = project.data.status === 'wip' ? 'in progress' : project.data.status;
@@ -21,10 +21,10 @@ projects.sort((a, b) => {
       <a
         href={href}
         target="_blank"
-        class="group block pb-6 border-b border-border/50 last:border-b-0 hover:opacity-70 transition-opacity"
+        class="group block pb-8 border-b border-border/50 last:border-b-0 hover:opacity-70 transition-opacity"
       >
         <div class="flex items-start justify-between mb-2">
-          <h2 class="text-base font-semibold group-hover:text-muted-foreground transition-colors">
+          <h2 class="text-lg font-bold group-hover:text-muted-foreground transition-colors">
             {project.data.title}
           </h2>
           <span class="text-xs text-muted-foreground flex-shrink-0 ml-4">{status}</span>
