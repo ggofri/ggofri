@@ -1,4 +1,0 @@
-#!/bin/sh
-
-# Run preview generation for staged content files
-npm run generate-previews

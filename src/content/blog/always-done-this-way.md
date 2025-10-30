@@ -2,7 +2,6 @@
 title: "It was always done this way"
 description: "Team bias in software engineering and its consequences"
 pubDate: 'Jul 29 2025'
-image: /images/previews/blog-always-done-this-way.png
 ---
 
 ## Team bias in software engineering and its consequences
