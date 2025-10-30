@@ -9,9 +9,10 @@ export interface Props {
 	pubDate: Date;
 	updatedDate?: Date;
 	readingTime?: number;
+	image?: string;
 }
 
-const { title, description, pubDate, updatedDate, readingTime } = Astro.props;
+const { title, description, pubDate, updatedDate, readingTime, image } = Astro.props;
 ---
 
 <html lang="en">
@@ -27,7 +28,7 @@ const { title, description, pubDate, updatedDate, readingTime } = Astro.props;
 		<meta property="og:url" content={Astro.url} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
-		<meta property="og:image" content="/logo.svg" />
+		<meta property="og:image" content={image || "/logo.svg"} />
 		{updatedDate && <meta property="article:modified_time" content={updatedDate.toISOString()} />}
 		<meta property="article:published_time" content={pubDate.toISOString()} />
 
@@ -36,7 +37,7 @@ const { title, description, pubDate, updatedDate, readingTime } = Astro.props;
 		<meta name="twitter:site" content="@ggofri" />
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
-		<meta name="twitter:image" content="/logo.svg" />
+		<meta name="twitter:image" content={image || "/logo.svg"} />
 		<script>
 			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 				document.documentElement.classList.add('dark');
