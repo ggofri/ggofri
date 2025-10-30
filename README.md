@@ -34,14 +34,14 @@ Connect with me at [LinkedIn](https://linkedin.com/in/ggofri).
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- ✨ Created repository or branch [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
+- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 30
+- 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 30
+- 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 30
+- ✨ Created repository or branch [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 30
+- ✨ Created repository or branch [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 30
+- ✨ Created repository or branch [ggofri/mvp-doc-ai](https://github.com/ggofri/mvp-doc-ai) - Oct 29
+- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 29
+- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 29
+- 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 29
+- 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 29
 <!--END_SECTION:activity-->
