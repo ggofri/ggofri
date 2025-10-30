@@ -21,9 +21,30 @@ if (!fs.existsSync(PREVIEW_DIR)) {
 function getStagedContentFiles() {
   try {
     const output = execSync('git diff --cached --name-only', { encoding: 'utf8' });
-    return output.split('\n').filter(line => line.startsWith('src/content/') && (line.endsWith('.md') || line.endsWith('.mdx')));
+    return output.split('\n').filter(line => (line.startsWith('src/content/blog/') || line.startsWith('src/content/pages/')) && (line.endsWith('.md') || line.endsWith('.mdx')));
   } catch (error) {
     console.error('Error getting staged files:', error);
+    return [];
+  }
+}
+
+// Get staged files that might affect pages
+function getStagedRelevantFiles() {
+  try {
+    const output = execSync('git diff --cached --name-only', { encoding: 'utf8' });
+    return output.split('\n').filter(line => line.startsWith('src/') && !line.startsWith('src/content/'));
+  } catch (error) {
+    console.error('Error getting staged files:', error);
+    return [];
+  }
+}
+
+// Get all content files that generate pages
+function getAllContentFiles() {
+  try {
+    return execSync('find src/content/blog src/content/pages -name "*.md" -o -name "*.mdx"', { encoding: 'utf8' }).split('\n').filter(Boolean);
+  } catch (error) {
+    console.error('Error getting content files:', error);
     return [];
   }
 }
@@ -59,8 +80,8 @@ function startServer() {
   });
 
   return new Promise((resolve) => {
-    server.listen(3000, () => {
-      console.log('Server running on http://localhost:3000');
+    server.listen(3001, () => {
+      console.log('Server running on http://localhost:3001');
       resolve(server);
     });
   });
@@ -71,10 +92,18 @@ function getSlug(filePath) {
   const relativePath = path.relative('src/content', filePath);
   let slug = relativePath.replace(/\.(md|mdx)$/, '').replace(/\/index$/, '');
 
-  // Remove collection prefix for pages
+  // For pages, remove 'pages/' prefix
   if (slug.startsWith('pages/')) {
     slug = slug.substring(6); // remove 'pages/'
   }
+
+  // Special case for pages/index -> /
+  if (slug === 'pages' && relativePath === 'pages/index.mdx') {
+    slug = '';
+  }
+
+  return slug || '/';
+}
 
   return slug || '/';
 }
@@ -155,20 +184,28 @@ function cleanupOldImages() {
 }
 
 async function main() {
-  const stagedFiles = getStagedContentFiles();
-  if (stagedFiles.length === 0) {
-    console.log('No staged content files to process.');
+  const stagedContentFiles = getStagedContentFiles();
+  const stagedRelevantFiles = getStagedRelevantFiles();
+  const allContentFiles = getAllContentFiles();
+
+  let filesToProcess = [];
+  if (stagedContentFiles.length > 0) {
+    filesToProcess = stagedContentFiles;
+  } else if (stagedRelevantFiles.length > 0) {
+    filesToProcess = allContentFiles;
+  } else {
+    console.log('No relevant staged files to process.');
     return;
   }
 
-  console.log('Processing files:', stagedFiles);
+  console.log('Processing files:', filesToProcess);
 
   buildSite();
   const server = await startServer();
 
-  for (const file of stagedFiles) {
+  for (const file of filesToProcess) {
     const slug = getSlug(file);
-    const url = `http://localhost:3000${slug === '/' ? '' : slug}`;
+    const url = `http://localhost:3001${slug === '/' ? '' : '/' + slug}`;
     const imageName = (slug === '/' ? 'index' : slug.replace(/\//g, '-')) + '.png';
     const imagePath = path.join(PREVIEW_DIR, imageName);
     const relativeImagePath = `/images/previews/${imageName}`;
