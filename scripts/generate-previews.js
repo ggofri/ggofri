@@ -102,11 +102,8 @@ function getSlug(filePath) {
     slug = '';
   }
 
-  return slug || '/';
-}
-
-  return slug || '/';
-}
+   return slug || '/';
+ }
 
 // Take screenshot
 async function takeScreenshot(url, outputPath) {
