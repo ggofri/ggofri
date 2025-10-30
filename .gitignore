@@ -2,8 +2,6 @@
 dist/
 # generated types
 .astro/
-# generated preview images
-public/images/previews/
 
 # dependencies
 node_modules/
