@@ -34,8 +34,4 @@ Connect with me at [LinkedIn](https://linkedin.com/in/ggofri).
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
-- 🚀 Pushed commits to [ggofri/mvp-doc-ai](https://github.com/ggofri/mvp-doc-ai) - Nov 01
-- 🔄 Opened/updated PR in [ggofri/mvp-doc-ai](https://github.com/ggofri/mvp-doc-ai) - Nov 01
-- 🔄 Opened/updated PR in [ggofri/mvp-doc-ai](https://github.com/ggofri/mvp-doc-ai) - Nov 01
-- ✨ Created repository or branch [ggofri/mvp-doc-ai](https://github.com/ggofri/mvp-doc-ai) - Nov 01
 <!--END_SECTION:activity-->
