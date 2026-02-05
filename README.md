@@ -1,12 +1,12 @@
 # ggofri
 
-## Founding Engineer
+## Software Engineer | AI & DX Specialist
 
 My philosophy is: Treat every problem as a **puzzle**. This allowed me to easily **divide** and joyfully **conquer**.
 
 > I'm based in _Buenos Aires, Argentina_. If you're here and want to chat ping me and let's drink mate 🧉
 
-**⚙️ Focused on:** Platform Software, Developer Experience & Growth Engineering
+**⚙️ Focused on:** AI Engineering, Platform Software, Developer Experience & Growth Engineering
 
 ### What I Do
 
@@ -15,10 +15,6 @@ My philosophy is: Treat every problem as a **puzzle**. This allowed me to easily
 - **Technical Writing**: Sharing software engineering insights and best practices through blogging
 - **Open Source Contributions**: Creating tools that benefit the developer community
 - **Build in public**: Building products from 0 to production in public at [X](x.com/ggofri)
-
-### 🧱 Currently building: Torch It
-
-Site builder with built-in experimentation [torch.it.com](https://torch.it.com)
 
 ### Connect
 
