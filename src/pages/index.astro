@@ -1,9 +1,8 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
 import ProjectsList from "../components/ProjectsList.astro";
-import Services from "../components/Services.astro";
-import Cta from "../components/Cta.astro";
-import ScheduleCta from "../components/ScheduleCta.astro";
+import Bosun from "../components/Bosun.astro";
+import Papers from "../components/Papers.astro";
 import Ticker from "../components/ui/Ticker.astro";
 
 const tickerItems = [
@@ -15,45 +14,46 @@ const tickerItems = [
     "MercadoLibre",
     "Inale",
     "Lenovo",
+    "Veritran",
+    "Manchester City",
 ];
 ---
 
-<PageLayout title="Grow Your Startup | Growth Engineering & Product Development" description="Expert growth engineer helping startups scale through product strategy and experimentation. Book a call to accelerate your growth." image="/images/previews/landing.png">
+<PageLayout title="gofri — founder of bosun.sh" description="gofri is the founder of bosun.sh, building ai-native products for agentic development. spec-driven, agent-powered, human-commanded." image="/images/previews/landing.png">
 	<section id="hero" class="pt-64 pb-32">
-    <h1 class="text-4xl md:text-6xl font-bold mb-16 tracking-wider">i help startups grow</h1>
+    <h1 class="text-4xl md:text-6xl font-bold mb-16 tracking-wider">hi, i'm gofri</h1>
 		<p class="text-lg font-normal tracking-normal text-muted-foreground mt-4 mb-8 max-w-2xl">
-      combining product thinking with experimentation strategy to build products users obsess with
+      founder of <a href="https://bosun.sh" target="_blank" class="text-foreground font-semibold hover:opacity-70 transition-opacity">bosun.sh</a> — ai-native products for agentic development
 		</p>
-     <div class="text-base tracking-normal py-8">
-		  <p class="text-muted-foreground mb-2">interested in working together?</p>
-       <ScheduleCta text="book a call →"/>
-     </div>
-     <div class="mt-24">
-       <Ticker items={tickerItems} />
-     </div>
+    <div class="flex gap-6 text-sm font-bold py-8">
+      <a href="https://bosun.sh" target="_blank" class="px-6 py-3 bg-foreground text-background rounded-lg hover:opacity-90 transition-opacity">bosun.sh →</a>
+    </div>
+    <div class="mt-24">
+      <Ticker items={tickerItems} />
+    </div>
 	</section>
 
 	<section class="grid md:grid-cols-3 gap-8 my-32">
 		<div>
-			<h2 class="text-lg font-bold mb-2">product + growth</h2>
-			<p class="text-lg text-muted-foreground">i understand both sides of building and scaling</p>
+			<h2 class="text-lg font-bold mb-2">open source first</h2>
+			<p class="text-lg text-muted-foreground">tools and knowledge, shared by default</p>
 		</div>
 		<div>
-		  <h2 class="text-lg font-bold mb-2">hands-on</h2>
-			<p class="text-lg text-muted-foreground">i ship my own products, not just theory</p>
+		  <h2 class="text-lg font-bold mb-2">ownership > execution</h2>
+			<p class="text-lg text-muted-foreground">own the outcome, not just the output</p>
 		</div>
 		<div>
-			<h2 class="text-lg font-bold mb-2">opinionated</h2>
-			<p class="text-lg text-muted-foreground">i believe in shipping fast and learning from users</p>
+			<h2 class="text-lg font-bold mb-2">built toward autonomy</h2>
+			<p class="text-lg text-muted-foreground">every project a step toward independence</p>
 	  </div>
 	</section>
 
+	<Bosun />
+
+	<Papers />
+
 	<section id="projects" class="py-32 border-t border-border/50">
-		<h2 class="text-lg font-bold mb-12 text-muted-foreground">in-house products</h2>
+		<h2 class="text-lg font-bold mb-12 text-muted-foreground">open source & side projects</h2>
 		<ProjectsList />
 	</section>
-
-	<Services />
-
-	<Cta />
 </PageLayout>
