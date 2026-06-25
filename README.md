@@ -1,29 +1,25 @@
 # ggofri
 
-## Founding Engineer
+## Founder of bosun.sh · AI-Native Products for the Agentic Era
 
 My philosophy is: Treat every problem as a **puzzle**. This allowed me to easily **divide** and joyfully **conquer**.
 
 > I'm based in _Buenos Aires, Argentina_. If you're here and want to chat ping me and let's drink mate 🧉
 
-**⚙️ Focused on:** Platform Software, Developer Experience & Growth Engineering
+**⚙️ Focused on:** AI Engineering, Agentic Development, Developer Experience & Platform Software
 
 ### What I Do
 
-- **Platform Engineering**: Building developer tools and platforms that streamline workflows
-- **Growth Engineering**: Helping founders scale their businesses through data-driven strategies and growth hacking
-- **Technical Writing**: Sharing software engineering insights and best practices through blogging
-- **Open Source Contributions**: Creating tools that benefit the developer community
-- **Build in public**: Building products from 0 to production in public at [X](x.com/ggofri)
-
-### 🧱 Currently building: Torch It
-
-Site builder with built-in experimentation [torch.it.com](https://torch.it.com)
+- **Founder of bosun.sh**: Building ai-native products for agentic development — spec-driven, agent-powered, human-commanded
+- **Platform Engineering**: Building developer tools and platforms that streamline workflows for humans and agents alike
+- **Open Source Contributions**: Creating tools that benefit the developer community — see [bosun.sh](https://bosun.sh) and [github.com/ggofri](https://github.com/ggofri)
+- **Build in public**: Building products from 0 to production in public at [X](https://x.com/ggofri)
 
 ### Connect
 
 Follow my thoughts at [X](https://x.com/ggofri).  
-Connect with me at [LinkedIn](https://linkedin.com/in/ggofri).
+Connect with me at [LinkedIn](https://linkedin.com/in/ggofri).  
+See what I'm building at [bosun.sh](https://bosun.sh).
 
 ## I also have a blog! See my latest posts
 <!--START_SECTION:blog_posts-->
@@ -34,14 +30,4 @@ Connect with me at [LinkedIn](https://linkedin.com/in/ggofri).
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- ✨ Created repository or branch [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 25
 <!--END_SECTION:activity-->

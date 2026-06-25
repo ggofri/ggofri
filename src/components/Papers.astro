@@ -1,0 +1,39 @@
+---
+const papers = [
+  {
+    title: "The Intervention Penalty: A Simulation Study of Human Checkpoint Costs in AI Coding Governance",
+    meta: "preprint · 2026",
+    url: "https://zenodo.org/records/19457265",
+  },
+  {
+    title: "Artificial Intelligence in Cybersecurity: Reproducible Evidence on Vulnerability Discovery and Security Operations",
+    meta: "preprint · 2026",
+    url: "https://zenodo.org/records/19463970",
+  },
+];
+---
+
+<section id="papers" class="py-32 border-t border-border/50">
+  <div class="mb-12">
+    <h2 class="text-lg font-bold mb-2">papers</h2>
+    <p class="text-sm text-muted-foreground">published research on ai engineering and governance</p>
+  </div>
+
+  <div class="space-y-8">
+    {papers.map((paper) => (
+      <a
+        href={paper.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group block pb-8 border-b border-border/50 last:border-b-0 hover:opacity-70 transition-opacity"
+      >
+        <div class="flex items-start justify-between gap-4">
+          <h3 class="text-base leading-snug group-hover:text-muted-foreground transition-colors">
+            {paper.title}
+          </h3>
+          <span class="text-xs text-muted-foreground flex-shrink-0">{paper.meta}</span>
+        </div>
+      </a>
+    ))}
+  </div>
+</section>

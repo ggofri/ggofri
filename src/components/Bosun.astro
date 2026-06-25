@@ -1,0 +1,59 @@
+---
+const products = [
+  {
+    title: "Ohtools",
+    stage: "released · oss",
+    url: "https://github.com/bosun-sh/ohtools",
+    description: "typed tool apps with explorable hierarchy, CLI, MCP, and agent-facing metadata",
+  },
+  {
+    title: "Crew",
+    stage: "in development",
+    url: "https://bosun.sh",
+    description: "agent orchestration layer — coordinate multi-agent teams with human-defined specs",
+  },
+  {
+    title: "Raiders",
+    stage: "in development",
+    url: "https://bosun.sh",
+    description: "autonomous research agents with verifiable, citable output",
+  },
+  {
+    title: "Sounder",
+    stage: "closed",
+    url: "https://bosun.sh",
+    description: "real-time signal monitoring for agentic systems and AI-native products",
+  },
+];
+---
+
+<section id="bosun" class="py-32 border-t border-border/50">
+  <div class="mb-12">
+    <h2 class="text-lg font-bold mb-2">bosun.sh</h2>
+    <p class="text-sm text-muted-foreground">ai-native products for agentic development · spec-driven · agent-powered · human-commanded</p>
+  </div>
+
+  <div class="space-y-8">
+    {products.map((product) => (
+      <a
+        href={product.url}
+        target="_blank"
+        class="group block pb-8 border-b border-border/50 last:border-b-0 hover:opacity-70 transition-opacity"
+      >
+        <div class="flex items-start justify-between mb-2">
+          <h3 class="text-lg font-bold group-hover:text-muted-foreground transition-colors">
+            {product.title}
+          </h3>
+          <span class="text-xs text-muted-foreground flex-shrink-0 ml-4">{product.stage}</span>
+        </div>
+        <p class="text-sm text-muted-foreground leading-relaxed">{product.description}</p>
+      </a>
+    ))}
+  </div>
+
+  <div class="mt-12">
+    <a href="https://bosun.sh" target="_blank" class="text-sm font-bold hover:opacity-70 transition-opacity">
+      view all on bosun.sh →
+    </a>
+  </div>
+</section>

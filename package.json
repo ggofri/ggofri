@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "generate-previews": "node scripts/generate-previews.js"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.1",
@@ -25,6 +26,8 @@
   },
   "devDependencies": {
     "@types/node": "^22.8.6",
+    "puppeteer": "^24.27.0",
+    "serve": "^14.2.5",
     "typescript": "^5.7.2"
   }
 }
