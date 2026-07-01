@@ -23,11 +23,9 @@ See what I'm building at [bosun.sh](https://bosun.sh).
 
 ## I also have a blog! See my latest posts
 <!--START_SECTION:blog_posts-->
-- [AI hype vs. reality](https://ggofri.vercel.app/blog/ai-hype-vs-reality) - May 27 2026
-- [Context engineering](https://ggofri.vercel.app/blog/context-engineering) - Apr 22 2026
-- [The model is not the product](https://ggofri.vercel.app/blog/agents-over-models) - Mar 18 2026
 - [Your unfair advantage: show your work](https://ggofri.vercel.app/blog/unfair-advantage) - Aug 24 2025
 - [Shiny object syndrome](https://ggofri.vercel.app/blog/shiny-object) - Jul 29 2025
+- [It was always done this way](https://ggofri.vercel.app/blog/always-done-this-way) - Jul 29 2025
 <!--END_SECTION:blog_posts-->
 
 ## :zap: Recent activity
