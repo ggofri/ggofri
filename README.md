@@ -30,4 +30,14 @@ See what I'm building at [bosun.sh](https://bosun.sh).
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
+- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Jul 01
+- 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Jul 01
+- 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Jul 01
+- 🔄 Opened/updated PR in [ggofri/ggofri](https://github.com/ggofri/ggofri) - Jul 01
+- ✨ Created repository or branch [ggofri/ggofri](https://github.com/ggofri/ggofri) - Jul 01
+- 🚀 Pushed commits to [bosun-sh/ohtools](https://github.com/bosun-sh/ohtools) - Jul 01
+- 🚀 Pushed commits to [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Jun 28
+- ✨ Created repository or branch [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Jun 28
+- 🚀 Pushed commits to [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Jun 28
+- 🚀 Pushed commits to [bosun-sh/ohtools](https://github.com/bosun-sh/ohtools) - Jun 28
 <!--END_SECTION:activity-->
