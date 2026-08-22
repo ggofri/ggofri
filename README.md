@@ -30,5 +30,10 @@ See what I'm building at [bosun.sh](https://bosun.sh).
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
+- 🚀 Pushed commits to [bosun-sh/crew-node](https://github.com/bosun-sh/crew-node) - Aug 22
+- 🔄 Opened/updated PR in [bosun-sh/crew-node](https://github.com/bosun-sh/crew-node) - Aug 22
+- 🔄 Opened/updated PR in [bosun-sh/crew-node](https://github.com/bosun-sh/crew-node) - Aug 22
+- 🔄 Opened/updated PR in [bosun-sh/crew-node](https://github.com/bosun-sh/crew-node) - Aug 22
+- ✨ Created repository or branch [bosun-sh/crew-node](https://github.com/bosun-sh/crew-node) - Aug 22
 - 🚀 Pushed commits to [bosun-sh/crew-node](https://github.com/bosun-sh/crew-node) - Aug 19
 <!--END_SECTION:activity-->
