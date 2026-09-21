@@ -30,14 +30,12 @@ See what I'm building at [bosun.sh](https://bosun.sh).
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
+- 🚀 Pushed commits to [bosun-sh/crew-node](https://github.com/bosun-sh/crew-node) - Sep 21
+- 🚀 Pushed commits to [bosun-sh/crew-cli](https://github.com/bosun-sh/crew-cli) - Sep 21
+- ✨ Created repository or branch [bosun-sh/crew-cli](https://github.com/bosun-sh/crew-cli) - Sep 21
 - 🚀 Pushed commits to [bosun-sh/crew-node](https://github.com/bosun-sh/crew-node) - Aug 26
 - 🚀 Pushed commits to [bosun-sh/crew-node](https://github.com/bosun-sh/crew-node) - Aug 25
 - 🚀 Pushed commits to [bosun-sh/crew-node](https://github.com/bosun-sh/crew-node) - Aug 25
 - 🚀 Pushed commits to [bosun-sh/crew-node](https://github.com/bosun-sh/crew-node) - Aug 25
 - 🚀 Pushed commits to [bosun-sh/crew-node](https://github.com/bosun-sh/crew-node) - Aug 25
-- 🚀 Pushed commits to [bosun-sh/crew-node](https://github.com/bosun-sh/crew-node) - Aug 22
-- 🔄 Opened/updated PR in [bosun-sh/crew-node](https://github.com/bosun-sh/crew-node) - Aug 22
-- 🔄 Opened/updated PR in [bosun-sh/crew-node](https://github.com/bosun-sh/crew-node) - Aug 22
-- 🔄 Opened/updated PR in [bosun-sh/crew-node](https://github.com/bosun-sh/crew-node) - Aug 22
-- ✨ Created repository or branch [bosun-sh/crew-node](https://github.com/bosun-sh/crew-node) - Aug 22
 <!--END_SECTION:activity-->
