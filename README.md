@@ -30,4 +30,6 @@ See what I'm building at [bosun.sh](https://bosun.sh).
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
+- ⭐ Starred [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 09
+- ⭐ Starred [ggofri/fake-end](https://github.com/ggofri/fake-end) - Oct 09
 <!--END_SECTION:activity-->
