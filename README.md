@@ -1,35 +1,34 @@
-# Julian Ramirez · ggofri
+# ggofri
 
-### Forward deployed engineer · Buenos Aires, Argentina
+## Building at Bosun · AI Engineering & Developer Tools
 
-I turn loosely defined customer problems into software people use. I work across discovery, architecture, implementation and rollout—whether that means building a dashboard from scratch, untangling an integration or making an AI feature useful enough to adopt.
+I treat every problem as a **puzzle**: understand the pieces, find the boundaries, then build the simplest thing that holds together.
 
-I've done this at **Veritran, Mercado Libre and Ticmas**, and for **Live Nation and Expedia through Globant**. At Ticmas, I progressed from Staff Engineer to Tech Lead and Engineering Manager. I still build hands-on.
+> I'm _Julian Ramirez_, based in _Buenos Aires, Argentina_. If you're nearby, ping me and let's drink mate 🧉
 
-[LinkedIn](https://www.linkedin.com/in/ggofri) · [Email](mailto:jiramirez@proton.me)
+**⚙️ Focused on:** AI Engineering, Agentic Development, Developer Experience & Platform Software
 
-## Selected work
+### What I Build
 
-- **Manchester City, via Veritran:** Owned the implementation and product decisions for a fan-verification dashboard, iterating directly with customer success. First version in **two weeks**, final version in a month, in ongoing use.
-- **Ticmas:** Led the technical experiment and pipeline for curriculum-aware recommendations after teacher interviews exposed a mismatch in the original approach. The redesign rolled out to **all customers**; cumulative teacher activation grew from about **50 to 1,000+ across two pilot months**.
-- **Mercado Libre:** Helped split a regressing support-bot prompt into retrieval, reclassification and answering stages, with human escalation. Built orchestration, model integration and the API backend foundation. Approximately **25% of support handling steps** were bot-handled, as reported by the manager and performance reviews—not 25% of tickets.
+- **At Bosun:** Tools for AI-assisted development, alongside my day job. I work on explicit specifications, durable agent context and inspectable tool contracts.
+- **In production:** APIs, integrations, data pipelines and interfaces. I've worked at Veritran, Mercado Libre and Ticmas, and on Live Nation and Expedia through Globant.
+- **With AI:** Model integrations, evaluations and orchestration. I care about failure modes, human escalation and whether the extra machinery earns its place.
 
-## What I bring to a team
+### 🛠️ Repositories to Explore
 
-- **Customer discovery that changes what gets built.** Read the traffic, reproduce the problem, talk to users and turn the findings into a concrete scope.
-- **Delivery across the stack.** APIs, integrations, data pipelines and interfaces, with clear contracts and a path to rollout.
-- **AI engineering with evaluation.** Check failure modes, compare against simpler approaches and keep people in the loop where the system needs them.
-- **Technical leadership close to the work.** Architecture, implementation reviews and coordination across product, engineering and customer success.
+- [**Logbook**](https://github.com/bosun-sh/logbook) — task state and context that survive agent handoffs, backed by readable JSONL records and lifecycle hooks.
+- [**Plot**](https://github.com/bosun-sh/plot) — layered specifications with inheritance and approval gates tied to explicit targets.
+- [**fake-end**](https://github.com/ggofri/fake-end) — local HTTP mocks from YAML and TypeScript, with file-based routes, request interpolation and guarded responses.
+- [**eslint-plugin-ban-comments**](https://github.com/ggofri/eslint-plugin-ban-comments) — an ESLint plugin that disables JS and TS comments.
 
-## Building at Bosun
+### 🔎 Problems I've Worked On
 
-I'm also the technical founder of **Bosun**, a part-time effort building tools for AI-assisted development:
+- **Support-bot orchestration at Mercado Libre:** Helped split a growing, regressing prompt into retrieval, reclassification and answering stages. Built model integration and backend orchestration, with human escalation.
+- **Curriculum-aware recommendations at Ticmas:** Led the technical experiment and pipeline. Teacher interviews changed the objective; the redesigned recommendations rolled out to all customers.
+- **Fan-verification data at Veritran / Manchester City:** Built a Python/Flask aggregation layer and React/TypeScript dashboard to inspect verification outcomes and drill into records.
 
-- [Logbook](https://github.com/bosun-sh/logbook) — durable tasks and context for agent handoffs.
-- [Plot](https://github.com/bosun-sh/plot) — layered specifications and explicit approval gates.
+### Connect
 
-## Let's talk
-
-If your team needs an engineer who can work directly with customers and carry a problem through to production, [email me](mailto:jiramirez@proton.me) or [connect on LinkedIn](https://www.linkedin.com/in/ggofri).
-
-Based in Buenos Aires. If you're nearby, let's have a mate. 🧉
+Talk engineering with me on [**X**](https://x.com/ggofri).<br>
+Find me on [**LinkedIn**](https://www.linkedin.com/in/ggofri).<br>
+Or [**send me an email**](mailto:jiramirez@proton.me).
