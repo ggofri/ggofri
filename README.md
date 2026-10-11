@@ -1,34 +1,35 @@
 # ggofri
 
-## Building at Bosun · AI Engineering & Developer Tools
+## Founder of bosun.sh · AI-Native Products for the Agentic Era
 
-I treat every problem as a **puzzle**: understand the pieces, find the boundaries, then build the simplest thing that holds together.
+My philosophy is: Treat every problem as a **puzzle**. This allowed me to easily **divide** and joyfully **conquer**.
 
-> I'm _Julian Ramirez_, based in _Buenos Aires, Argentina_. If you're nearby, ping me and let's drink mate 🧉
+> I'm based in _Buenos Aires, Argentina_. If you're here and want to chat ping me and let's drink mate 🧉
 
 **⚙️ Focused on:** AI Engineering, Agentic Development, Developer Experience & Platform Software
 
-### What I Build
+### What I Do
 
-- **At Bosun:** Tools for AI-assisted development, alongside my day job. I work on explicit specifications, durable agent context and inspectable tool contracts.
-- **In production:** APIs, integrations, data pipelines and interfaces. I've worked at Veritran, Mercado Libre and Ticmas, and on Live Nation and Expedia through Globant.
-- **With AI:** Model integrations, evaluations and orchestration. I care about failure modes, human escalation and whether the extra machinery earns its place.
-
-### 🛠️ Repositories to Explore
-
-- [**Logbook**](https://github.com/bosun-sh/logbook) — task state and context that survive agent handoffs, backed by readable JSONL records and lifecycle hooks.
-- [**Plot**](https://github.com/bosun-sh/plot) — layered specifications with inheritance and approval gates tied to explicit targets.
-- [**fake-end**](https://github.com/ggofri/fake-end) — local HTTP mocks from YAML and TypeScript, with file-based routes, request interpolation and guarded responses.
-- [**eslint-plugin-ban-comments**](https://github.com/ggofri/eslint-plugin-ban-comments) — an ESLint plugin that disables JS and TS comments.
-
-### 🔎 Problems I've Worked On
-
-- **Support-bot orchestration at Mercado Libre:** Helped split a growing, regressing prompt into retrieval, reclassification and answering stages. Built model integration and backend orchestration, with human escalation.
-- **Curriculum-aware recommendations at Ticmas:** Led the technical experiment and pipeline. Teacher interviews changed the objective; the redesigned recommendations rolled out to all customers.
-- **Fan-verification data at Veritran / Manchester City:** Built a Python/Flask aggregation layer and React/TypeScript dashboard to inspect verification outcomes and drill into records.
+- **Founder of bosun.sh**: Building ai-native products for agentic development — spec-driven, agent-powered, human-commanded
+- **Platform Engineering**: Building developer tools and platforms that streamline workflows for humans and agents alike
+- **Open Source Contributions**: Creating tools that benefit the developer community — see [bosun.sh](https://bosun.sh) and [github.com/ggofri](https://github.com/ggofri)
+- **Build in public**: Building products from 0 to production in public at [X](https://x.com/ggofri)
 
 ### Connect
 
-Talk engineering with me on [**X**](https://x.com/ggofri).<br>
-Find me on [**LinkedIn**](https://www.linkedin.com/in/ggofri).<br>
-Or [**send me an email**](mailto:jiramirez@proton.me).
+Follow my thoughts at [X](https://x.com/ggofri).  
+Connect with me at [LinkedIn](https://linkedin.com/in/ggofri).  
+See what I'm building at [bosun.sh](https://bosun.sh).
+
+## I also have a blog! See my latest posts
+<!--START_SECTION:blog_posts-->
+- [Your unfair advantage: show your work](https://ggofri.vercel.app/blog/unfair-advantage) - Aug 24 2025
+- [Shiny object syndrome](https://ggofri.vercel.app/blog/shiny-object) - Jul 29 2025
+- [It was always done this way](https://ggofri.vercel.app/blog/always-done-this-way) - Jul 29 2025
+<!--END_SECTION:blog_posts-->
+
+## :zap: Recent activity
+<!--START_SECTION:activity-->
+- ⭐ Starred [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 09
+- ⭐ Starred [ggofri/fake-end](https://github.com/ggofri/fake-end) - Oct 09
+<!--END_SECTION:activity-->
