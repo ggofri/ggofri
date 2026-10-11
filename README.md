@@ -6,7 +6,7 @@ I turn loosely defined customer problems into software people use. I work across
 
 I've done this at **Veritran, Mercado Libre and Ticmas**, and for **Live Nation and Expedia through Globant**. At Ticmas, I progressed from Staff Engineer to Tech Lead and Engineering Manager. I still build hands-on.
 
-[Work & case studies](https://github.com/ggofri/site/tree/33d824d/src/content/work) · [LinkedIn](https://www.linkedin.com/in/ggofri) · [Email](mailto:jiramirez@proton.me)
+[LinkedIn](https://www.linkedin.com/in/ggofri) · [Email](mailto:jiramirez@proton.me)
 
 ## Selected work
 
