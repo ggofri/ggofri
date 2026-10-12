@@ -6,8 +6,6 @@ I work directly with customers to understand their problems and build software a
 
 **Product Engineering · AI Engineering · Applied AI · Forward Deployed Engineering · Growth Engineering**
 
-<sub>Developer Experience &amp; Platform Engineering</sub>
-
 ### When a bigger prompt stopped helping.
 
 **Mercado Libre · 2021–22 · Before ChatGPT**
