@@ -1,0 +1,41 @@
+name: Update GitHub Activity
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: profile-readme
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update-activity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Validate activity markers
+        run: |
+          python3 - <<'PYTHON'
+          from pathlib import Path
+          text = Path('README.md').read_text()
+          start = '<!--START_SECTION:activity-->'
+          end = '<!--END_SECTION:activity-->'
+          if text.count(start) != 1 or text.count(end) != 1 or text.index(start) >= text.index(end):
+              raise SystemExit('README must contain exactly one ordered pair of activity markers')
+          PYTHON
+
+      - name: Update GitHub Activity
+        uses: ggofri/github-activity-updater@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          username: ggofri
+          max-events: 10

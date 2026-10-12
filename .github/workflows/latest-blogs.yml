@@ -1,0 +1,103 @@
+name: Update Latest Blog Posts
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - .github/workflows/latest-blogs.yml
+  schedule:
+    - cron: "15 */12 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: profile-readme
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  FEED_URL: https://ggofri.com/rss.xml
+
+jobs:
+  update-blog-posts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update blog posts section
+        run: |
+          python3 - <<'PYTHON'
+          import os
+          import re
+          import xml.etree.ElementTree as ET
+          from datetime import timezone
+          from email.utils import parsedate_to_datetime
+          from pathlib import Path
+          from urllib.parse import urlsplit
+          from urllib.request import Request, urlopen
+
+          def update_blog(text, xml):
+              start = '<!--START_SECTION:blog_posts-->'
+              end = '<!--END_SECTION:blog_posts-->'
+              if text.count(start) != 1 or text.count(end) != 1 or text.index(start) >= text.index(end):
+                  raise ValueError('README must contain exactly one ordered pair of blog markers')
+              feed = ET.fromstring(xml)
+              if feed.tag != 'rss':
+                  raise ValueError('Expected an RSS feed')
+              posts = []
+              for item in feed.findall('./channel/item'):
+                  title = ' '.join((item.findtext('title') or '').split())
+                  link = (item.findtext('link') or '').strip()
+                  date = parsedate_to_datetime(item.findtext('pubDate') or '')
+                  if not title or urlsplit(link).scheme not in ('http', 'https') or not urlsplit(link).netloc:
+                      raise ValueError('Post must contain a title and an HTTP(S) link')
+                  if date.tzinfo is None:
+                      raise ValueError('Post publication date must include a timezone')
+                  date = date.astimezone(timezone.utc)
+                  title = re.sub(r'([\\`*_[\]<>])', r'\\\1', title)
+                  link = link.replace(' ', '%20').replace('(', '%28').replace(')', '%29').replace('<', '%3C').replace('>', '%3E')
+                  posts.append((date, title, link))
+              if not posts:
+                  raise ValueError('Feed contains no posts; keeping existing README')
+              posts.sort(key=lambda post: post[0], reverse=True)
+              lines = [f"- [{title}]({link}) - {date.strftime('%b %d %Y')}" for date, title, link in posts[:5]]
+              left = text.index(start) + len(start)
+              right = text.index(end)
+              return text[:left] + '\n' + '\n'.join(lines) + '\n' + text[right:]
+
+          def main():
+              path = Path('README.md')
+              text = path.read_text()
+              request = Request(os.environ['FEED_URL'], headers={'User-Agent': 'ggofri-profile-readme'})
+              with urlopen(request, timeout=20) as response:
+                  if response.status != 200:
+                      raise ValueError(f'RSS returned HTTP {response.status}')
+                  updated = update_blog(text, response.read())
+              if updated != text:
+                  temporary = path.with_suffix('.tmp')
+                  temporary.write_text(updated)
+                  temporary.replace(path)
+
+          if __name__ == '__main__':
+              try:
+                  main()
+              except Exception as error:
+                  raise SystemExit(f'Blog update failed; README unchanged: {error}')
+          PYTHON
+
+      - name: Commit changed blog posts
+        run: |
+          if git diff --quiet -- README.md; then
+            exit 0
+          fi
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add README.md
+          git commit -m "docs: auto-update README with latest blog posts"
+          git push origin HEAD:main
