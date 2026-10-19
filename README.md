@@ -69,16 +69,16 @@ At **Bosun**, I explore related questions through tools people can inspect.
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
-- 🐛 Created/updated issue in [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
-- 🔄 Opened/updated PR in [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
-- 🔄 Opened/updated PR in [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
-- 🍴 Forked [vercel-labs/skills](https://github.com/vercel-labs/skills) - Oct 19
-- 🐛 Created/updated issue in [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
-- 🐛 Created/updated issue in [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
-- 🔄 Opened/updated PR in [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
-- 🚀 Pushed commits to [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
-- 🐛 Created/updated issue in [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
-- 🚀 Pushed commits to [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
+- 🔄 Opened/updated PR in [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
+- 🐛 Created/updated issue in [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
+- 🐛 Created/updated issue in [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
+- 🐛 Created/updated issue in [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
+- 🔄 Opened/updated PR in [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
+- 🐛 Created/updated issue in [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
+- 🔄 Opened/updated PR in [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
+- 🚀 Pushed commits to [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
+- 🐛 Created/updated issue in [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
+- 🐛 Created/updated issue in [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
 <!--END_SECTION:activity-->
 
 </details>
