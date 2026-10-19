@@ -69,15 +69,16 @@ At **Bosun**, I explore related questions through tools people can inspect.
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 12
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 11
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 11
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 12
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 12
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 11
-- 🚀 Pushed commits to [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 11
-- ⭐ Starred [ggofri/ggofri](https://github.com/ggofri/ggofri) - Oct 09
-- ⭐ Starred [ggofri/fake-end](https://github.com/ggofri/fake-end) - Oct 09
+- 🐛 Created/updated issue in [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
+- 🔄 Opened/updated PR in [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
+- 🔄 Opened/updated PR in [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
+- 🍴 Forked [vercel-labs/skills](https://github.com/vercel-labs/skills) - Oct 19
+- 🐛 Created/updated issue in [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
+- 🐛 Created/updated issue in [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
+- 🔄 Opened/updated PR in [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
+- 🚀 Pushed commits to [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
+- 🐛 Created/updated issue in [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
+- 🚀 Pushed commits to [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
 <!--END_SECTION:activity-->
 
 </details>
