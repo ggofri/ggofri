@@ -69,6 +69,7 @@ At **Bosun**, I explore related questions through tools people can inspect.
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
+- 🔄 Opened/updated PR in [vercel-labs/skills](https://github.com/vercel-labs/skills) - Oct 20
 - 🔄 Opened/updated PR in [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
 - 🐛 Created/updated issue in [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
 - 🐛 Created/updated issue in [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
@@ -77,7 +78,6 @@ At **Bosun**, I explore related questions through tools people can inspect.
 - 🐛 Created/updated issue in [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
 - 🔄 Opened/updated PR in [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
 - 🚀 Pushed commits to [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
-- 🐛 Created/updated issue in [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
 - 🐛 Created/updated issue in [bosun-sh/chest](https://github.com/bosun-sh/chest) - Oct 19
 <!--END_SECTION:activity-->
 
