@@ -59,9 +59,7 @@ At **Bosun**, I explore related questions through tools people can inspect.
 
 ## I also have a blog! See my latest posts
 <!--START_SECTION:blog_posts-->
-- [Your unfair advantage: show your work](https://ggofri.vercel.app/blog/unfair-advantage) - Aug 24 2025
-- [Shiny object syndrome](https://ggofri.vercel.app/blog/shiny-object) - Jul 29 2025
-- [It was always done this way](https://ggofri.vercel.app/blog/always-done-this-way) - Jul 29 2025
+- [AI security after discovery: capability is not deployment confidence](https://site-green-zeta-77.vercel.app/writing/ai-security-evidence-update/) - Oct 10 2026
 <!--END_SECTION:blog_posts-->
 
 <details>
