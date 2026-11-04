@@ -67,6 +67,7 @@ At **Bosun**, I explore related questions through tools people can inspect.
 
 ## :zap: Recent activity
 <!--START_SECTION:activity-->
+- 🚀 Pushed commits to [ggofri/vercel-skills](https://github.com/ggofri/vercel-skills) - Nov 04
 - 🔄 Opened/updated PR in [bosun-sh/skills](https://github.com/bosun-sh/skills) - Nov 04
 - 🔄 Opened/updated PR in [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Nov 04
 - 🔄 Opened/updated PR in [bosun-sh/skills](https://github.com/bosun-sh/skills) - Nov 04
@@ -76,7 +77,6 @@ At **Bosun**, I explore related questions through tools people can inspect.
 - ✨ Created repository or branch [ggofri/beckon](https://github.com/ggofri/beckon) - Oct 29
 - ✨ Created repository or branch [ggofri/vercel-skills](https://github.com/ggofri/vercel-skills) - Oct 20
 - ✨ Created repository or branch [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
-- 🚀 Pushed commits to [bosun-sh/logbook](https://github.com/bosun-sh/logbook) - Oct 19
 <!--END_SECTION:activity-->
 
 </details>
